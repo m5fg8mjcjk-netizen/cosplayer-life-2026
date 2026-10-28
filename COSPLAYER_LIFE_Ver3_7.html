@@ -1,0 +1,549 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#21162f"><title>COSPLAYER LIFE Ver.3.5 ♡</title><style>
+:root{color-scheme:dark;--bg:#21162f;--panel:#34233f;--pink:#f6a8ce;--line:#725273;--text:#fff1fa}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#573455 0%,#21162f 65%);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;color:var(--text)}button,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.4;cursor:not-allowed}.wrap{max-width:610px;margin:auto;padding:16px 14px 50px}.head{text-align:center;padding:20px 8px 15px}.eyebrow{letter-spacing:3px;color:#eab7d4;font-size:10px}.head h1{font-size:31px;line-height:1.16;letter-spacing:1px;margin:10px 0;color:#ffe3f4;text-shadow:0 2px 1px #8e5681}.sub{font-size:12px;color:#e7c4db}.card{background:linear-gradient(145deg,#402a4c,#2c213a);border:1px solid #866180;border-radius:20px;padding:17px;margin:12px 0;box-shadow:0 4px 14px #140c1a55}.toprow,.controls,.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.badge{font-size:11px;border:1px solid #c17ea6;background:#6b4163;border-radius:999px;padding:3px 10px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:13px}.stat label{display:block;color:#e2bfd2;font-size:12px}.value{font-size:21px;font-weight:800;letter-spacing:.2px}.meter{height:7px;background:#201829;border-radius:9px;overflow:hidden;margin-top:3px}.meter span{display:block;height:100%;background:linear-gradient(90deg,#eb82b7,#ffd4e7);transition:width .3s}.meter.blue span{background:linear-gradient(90deg,#7da5f6,#b5d3ff)}.line{border-top:1px solid #725273;padding-top:11px;margin-top:13px;color:#e6c5df;font-size:12px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{min-width:0}.field label{display:block;font-size:12px;margin-bottom:5px;color:#ecc7df}select{background:#503654;color:white;border:1px solid #a9759f;border-radius:11px;padding:11px 8px;width:100%;min-height:44px}.btn{background:#f0a6c9;border:1px solid #ffe0f1;border-radius:13px;color:#331f39;font-weight:800;padding:12px;min-height:46px}.btn.alt{background:#563c62;color:#ffe3f2;border-color:#916f98}.btn.ghost{background:transparent;color:#f4bed9;border-color:#8a6486}.full{width:100%}.choices{display:grid;gap:9px;margin-top:15px}.choice{text-align:left;width:100%;border:1px solid #a9759f;color:#ffe7f4;background:#523657;padding:13px;border-radius:13px;min-height:49px}.choice:active{background:#794e77}.choice small{display:block;color:#e0bfd4;margin-top:1px}.eventtag{display:inline-block;font-size:13px;font-weight:900;color:#30192f;background:linear-gradient(90deg,#ffd3e8,#f5a4d3);letter-spacing:2px;padding:7px 12px;border-radius:10px;border:1px solid #fff0f7}.eventtitle{font-size:26px;font-weight:900;line-height:1.36;color:#ffe1f1;margin:12px 0;text-shadow:0 2px 0 #623457}.event-active{border:2px solid #f4a3d1!important;box-shadow:0 0 0 3px #f4a3d11c,0 4px 14px #140c1a55!important}.event-result{background:linear-gradient(130deg,#664166,#412d50);border:1px solid #eab4d2;border-radius:15px;padding:14px;margin-top:14px}.result-heading{font-size:18px;font-weight:900;color:#ffe1ef;margin-bottom:5px}.result-delta{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.delta-chip{background:#2a203b;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:700;border:1px solid #90738e}.event-result p{margin:5px 0 0;font-size:14px}.story{white-space:pre-line;margin:8px 0}.notice{font-size:12px;color:#e9bbd2;margin-top:8px}.logs{max-height:290px;overflow-y:auto;padding-right:3px}.log{border-left:2px solid #b876a0;padding:8px 10px;margin:9px 0;background:#ffffff09;border-radius:0 9px 9px 0;font-size:13px}.log strong{color:#f6b3d5;font-size:11px}.tiny{font-size:12px;color:#d4afc8}.hidden{display:none!important}.end{border:1px solid #f6c4dc;background:linear-gradient(#513658,#2c213b);border-radius:18px;padding:20px;text-align:center}.endrank{font-size:55px;color:#ffd69a;font-weight:900}.end h2{margin:0;color:#ffe4ee}.endingtext{text-align:left;white-space:pre-line}.spark{color:#ffbedf}.muted{opacity:.78}.statuspill{color:#fff;background:#745070;border-radius:10px;padding:4px 8px;font-size:12px}.footer{text-align:center;font-size:11px;color:#ac8aa8;padding:14px}button:focus-visible,select:focus-visible{outline:3px solid white;outline-offset:2px}
+ .compact-control{padding:11px 13px;margin:8px 0}.compact-control select{padding:7px 6px}.compact-control .controls{margin-top:7px!important}.compact-control .btn{min-height:40px;padding:7px}.compact-control .tiny{margin-top:3px!important}.statusbox{font-size:12px;color:#ffd8e8;margin-top:6px;line-height:1.7}.result-continue{width:100%;margin-top:11px}.event-active .eventtitle{font-size:28px}.stage-button{margin-top:12px;font-size:17px;background:linear-gradient(90deg,#f8b6d8,#ffe0ed)}.event-active{scroll-margin-top:12px}.event-active .eventtag{animation:appear .3s ease-out}@keyframes appear{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.event-active .eventtag{animation:none}}.log{margin:6px 0;padding:6px 10px}
+/* Ver.2.8 compact layout: prioritize choices without changing simulation logic */
+.wrap{max-width:610px;padding:7px 10px 24px}
+.head{padding:5px 3px 5px;display:flex;align-items:center;justify-content:space-between;gap:6px;text-align:left;flex-wrap:wrap}
+.head .eyebrow{display:none}
+.head h1{font-size:18px;line-height:1.15;margin:1px 0;text-shadow:none}
+.head h1 br,.head h1 span{display:none}
+#helpbtn{font-size:11px!important;padding:6px 9px!important;margin:0!important;min-height:32px!important;white-space:nowrap}
+.card{padding:11px 12px;margin:7px 0;border-radius:15px;box-shadow:none}
+.toprow{gap:5px}.badge{padding:2px 7px;font-size:10px}
+.stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px 9px;margin-top:7px}
+.stat label{font-size:10px;line-height:1.2}
+.value{font-size:15px;line-height:1.35;overflow-wrap:anywhere}
+.meter{height:4px;margin-top:3px}
+.line{padding-top:6px;margin-top:7px;font-size:10px;line-height:1.45}
+.statusbox{margin-top:3px;line-height:1.4;font-size:10px}
+.compact-control{padding:8px 10px;margin:6px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 8px;align-items:end}
+.compact-control .row{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:6px}
+.compact-control .field label{font-size:10px;margin-bottom:2px}
+.compact-control select{font-size:16px;min-height:37px;padding:5px 7px;border-radius:9px}
+.compact-control .controls{margin:0!important;display:block}
+.compact-control .btn{width:auto;min-height:37px;max-width:110px;padding:5px 9px;font-size:12px;white-space:nowrap}
+.compact-control #hint{display:none}
+.eventtag{font-size:10px;letter-spacing:1px;padding:4px 8px}
+.eventtitle,.event-active .eventtitle{font-size:20px;line-height:1.26;margin:8px 0}
+.story{font-size:13px;line-height:1.5;margin:5px 0}
+.choices{gap:6px;margin-top:9px}
+.choice{min-height:41px;padding:8px 10px;font-size:13px;border-radius:10px}
+.choice small{font-size:11px}
+.event-result{margin-top:9px;padding:10px}.result-heading{font-size:16px}
+.result-delta{gap:4px;margin:6px 0}.delta-chip{padding:3px 7px;font-size:11px}
+.stage-button{font-size:14px;margin-top:8px}
+.logs{max-height:185px}.log{padding:5px 8px;margin:4px 0;font-size:12px}
+.toolbar{gap:6px;justify-content:center}.toolbar .btn{padding:7px 9px;min-height:38px;font-size:12px}
+#savehelp{font-size:10px;margin:5px 0}.footer{padding:6px;font-size:10px}
+@media(max-width:365px){.value{font-size:13px}.compact-control .btn{font-size:11px;padding:5px 6px}.compact-control{gap:4px}.eventtitle,.event-active .eventtitle{font-size:18px}.head h1{font-size:16px}}
+
+/* Ver.2.8: fit the main game in one viewport; event only appears over the diary */
+html,body{height:100%;overflow:hidden}
+body{height:100dvh;min-height:0}
+.wrap{height:100%;max-height:100dvh;display:flex;flex-direction:column;overflow:hidden;padding:calc(env(safe-area-inset-top,0px) + 3px) 10px calc(env(safe-area-inset-bottom,0px) + 6px);gap:5px}
+.head{flex:0 0 auto;padding:0 3px;min-height:32px}.head h1{font-size:17px}.head #helpbtn{min-height:27px!important;padding:3px 7px!important}
+.card{flex:0 0 auto;margin:0;padding:7px 10px;border-radius:13px}
+.toprow{gap:3px}.badge{font-size:10px;padding:1px 6px}
+.stats{margin-top:4px;gap:3px 9px}
+.stat label{font-size:10px;line-height:1.05}.stat .value{font-size:14px;line-height:1.15}.meter{height:3px;margin-top:2px}
+.statusbox:empty{display:none}.statusbox{max-height:26px;overflow:hidden;font-size:9px}
+.line{margin-top:4px;padding-top:4px;font-size:9px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.compact-control{padding:5px 9px;gap:5px;margin:0;grid-template-columns:minmax(0,1fr) auto}
+.compact-control .field label{font-size:9px;margin:0}.compact-control select{min-height:30px;height:30px;padding:2px 5px;font-size:13px}
+.compact-control .btn{height:30px;min-height:30px;font-size:11px;padding:2px 7px}
+.diary-panel{flex:1 1 auto;min-height:0;overflow:hidden;display:flex;flex-direction:column;position:relative;padding:7px 9px}
+.diary-heading{flex:none;font-size:12px}.diary-heading .tiny{font-size:9px}
+.diary-panel .logs{flex:1;min-height:0;max-height:none;overflow-y:auto;overscroll-behavior:contain}
+.log{padding:4px 6px;font-size:11px;line-height:1.3;margin:3px 0}
+.log strong{font-size:9px}
+.toolbar{flex:none;gap:5px}.toolbar .btn{flex:1;min-height:27px;padding:3px 6px;font-size:10px;border-radius:8px}
+#savehelp,.footer{display:none}
+/* The dialog is layered over the journal only; the background journal is never displaced. */
+#eventbox{position:absolute;inset:0;z-index:5;margin:0;border-radius:13px;display:flex;flex-direction:column;overflow-y:auto;overscroll-behavior:contain;padding:10px 12px;background:linear-gradient(150deg,#604066 0%,#382540 100%);box-shadow:0 0 0 9999px #0000000b}
+#eventbox.hidden{display:none!important}
+#eventbox .eventtag{flex:none;align-self:flex-start;font-size:9px;padding:3px 7px;letter-spacing:.7px}
+#eventbox .eventtitle{font-size:17px!important;line-height:1.18;margin:5px 0 2px}
+#eventbox .story{font-size:12px;line-height:1.35;margin:4px 0 5px;white-space:pre-line}
+#eventbox .choices{gap:5px;margin-top:5px}
+#eventbox .choice{min-height:33px;padding:5px 8px;font-size:12px;line-height:1.3}
+#eventbox .choice small{font-size:10px}
+#eventbox .stage-button{padding:8px;min-height:36px;font-size:13px}
+#eventbox .event-result{padding:7px;margin-top:5px;border-radius:11px}
+#eventbox .result-heading{font-size:14px;margin:0}
+#eventbox .event-result p{font-size:12px;line-height:1.35;margin:3px 0}
+#eventbox .delta-chip{font-size:10px;padding:2px 5px}
+#eventbox .result-delta{gap:3px;margin:5px 0}
+#eventbox .result-continue{min-height:34px;margin-top:6px;padding:6px 8px;font-size:12px}
+#eventbox .end{padding:8px}#eventbox .endrank{font-size:28px}#eventbox .endingtext{font-size:11px;white-space:pre-line}
+@media(max-height:700px){.stats{gap:2px 7px}.stat .value{font-size:12px}.wrap{gap:3px}.head{min-height:26px}.diary-panel{padding:5px 7px}}
+@media(max-width:365px){#eventbox .eventtitle{font-size:15px!important}#eventbox .choice{font-size:11px}.stat .value{font-size:12px}}
+
+/* Ver.3.5 Sweet Arcade renewal – no extra vertical UI regions */
+:root{--bg:#180f28;--panel:#322044;--pink:#ffa9d9;--line:#bd85ca;--text:#fff4fc}
+body{background:radial-gradient(ellipse at 13% 4%,#71376e 0,transparent 53%),radial-gradient(ellipse at 93% 70%,#42266b 0,transparent 50%),#180f28}
+.head h1{color:#fff0fb;letter-spacing:.5px;text-shadow:0 0 13px #ffb3ec75}
+.head::after{content:'✦ ♡ ✦';font-size:13px;color:#ffc2e5;letter-spacing:2px;align-self:center}
+.card{background:linear-gradient(140deg,#432650f5,#291c3cf5);border:1px solid #d68fc277;box-shadow:inset 0 1px 0 #ffffff24,0 3px 14px #13091d35}
+.stats .stat{border-radius:9px;background:linear-gradient(125deg,#ffffff10,#ffffff05);padding:4px 6px;min-width:0}
+.value{color:#fff8fd;text-shadow:0 1px 6px #e76fb533}
+.badge{background:linear-gradient(120deg,#8d4c80,#5a396f);border-color:#e6a1ca;color:#fff5fd}
+.btn{background:linear-gradient(110deg,#ffc3e4,#f9a0cf);border-color:#ffe3f5;box-shadow:inset 0 1px #fff7}
+.btn.alt{background:linear-gradient(110deg,#674579,#4b3465);color:#fff3fd;border-color:#b785c3}
+select{background:#51365f;border:1px solid #d39dd0;color:#fff8fb}
+.diary-panel{background:linear-gradient(170deg,#382447,#251a38)}
+.diary-heading{color:#ffe0f3}
+.log{background:#ffffff0c;border-left-color:#ffafd9;border-radius:2px 10px 10px 2px}
+#eventbox{background:linear-gradient(155deg,#543060 0%,#352141 58%,#271b3c 100%)!important;border:2px solid #ffc1e3!important;box-shadow:inset 0 0 0 2px #ffffff10,0 0 18px #ed99d755!important}
+.eventtag{background:linear-gradient(90deg,#fff0f9,#ffb0db);color:#5a2a52}
+.choice{background:linear-gradient(105deg,#674270,#513661);border-color:#c18ab7;box-shadow:inset 0 1px #ffffff1c}
+.choice:active{transform:scale(.99);background:#8d5684}
+.event-result{background:linear-gradient(130deg,#724973,#472d62);border-color:#ffcae6}
+.meter span{background:linear-gradient(90deg,#ff75b6,#ffe2f5)}
+#ending-screen{background:radial-gradient(circle at top,#613e7b,#22152f 70%)!important}
+.end{border-color:#ffc4e9;box-shadow:0 0 24px #d977bc35}
+.endrank{text-shadow:0 0 20px #ffc1db88}
+@media(max-width:370px){.head::after{display:none}.stats .stat{padding:3px 4px}}
+</style><style>
+#onboarding{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:#130b20dc;padding:16px;overflow-y:auto}
+#onboarding.hidden{display:none!important}#guidepanel{width:min(100%,490px);max-height:90vh;overflow-y:auto;border:2px solid #ffc1df;background:linear-gradient(155deg,#57375b,#271b37);border-radius:23px;padding:22px;box-shadow:0 12px 55px #10061ccc}
+#guidepanel h2{font-size:25px;line-height:1.4;color:#ffe0f0;margin:12px 0}#guidebody{white-space:pre-line;font-size:15px;line-height:1.85}#guideprogress{color:#ffc6e3;font-size:12px;letter-spacing:2px}#guidepanel .guide-actions{display:flex;gap:9px;margin-top:20px}#guidepanel .guide-actions button{flex:1;min-width:0}
+#helpbtn{font-size:12px;padding:7px 11px;border:1px solid #bc8fae;border-radius:12px;color:#ffe1ee;background:#4b3354;min-height:40px}
+#eventbox{scroll-margin-top:12px}#eventbox.event-active{position:relative;z-index:3;background:linear-gradient(145deg,#644269,#3a274d)}
+</style><style id="fullscreen-ending-style">
+/* End-of-life award is a separate full-viewport view, not part of the diary. */
+#ending-screen{position:fixed;inset:0;z-index:2000;background:radial-gradient(ellipse at 50% 0%,#65436b 0%,#251730 70%);color:#fff1fa;display:flex;flex-direction:column;align-items:center;overflow:hidden;padding:env(safe-area-inset-top, 8px) 12px env(safe-area-inset-bottom, 10px);box-sizing:border-box}
+#ending-screen.hidden{display:none!important}
+#ending-screen .ending-banner{flex:none;text-align:center;width:min(100%,610px);padding:10px 0 8px}
+#ending-screen .ending-banner .eyebrow{font-size:11px;letter-spacing:2px}
+#ending-screen .end{flex:1;min-height:0;width:min(100%,610px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:16px 17px;border:2px solid #f9aed3;box-shadow:0 12px 42px #0d0718aa;border-radius:20px;text-align:center}
+#ending-screen .endrank{font-size:clamp(54px,13vw,82px);line-height:1.15}
+#ending-screen .end h2{font-size:clamp(21px,5.5vw,30px);line-height:1.3;margin:4px 0 12px}
+#ending-screen .endingtext{font-size:14px;line-height:1.7;text-align:left;white-space:pre-line;margin-top:16px}
+#ending-screen .endingtext .muted{color:#e6cadb}
+#ending-screen .end .btn{font-size:15px}
+#ending-screen .ending-footer{flex:none;width:min(100%,610px);text-align:center;padding:10px 0 4px;color:#f6badd;font-size:11px}
+@media(max-height:700px){#ending-screen .ending-banner{padding:4px 0}#ending-screen .end{padding:12px}#ending-screen .endrank{font-size:48px}#ending-screen .ending-footer{padding:4px}}
+.head{position:relative}.head:before{content:'🎀';position:absolute;right:8px;top:12px;font-size:28px;filter:drop-shadow(0 3px 5px #fc9cdb90)}.diary-heading b:after{content:'  ♡ ✦';color:#ffbbe4}.card{backdrop-filter:blur(7px)}.choice{transition:transform .11s ease,filter .11s ease}.choice:not(:disabled):hover{filter:brightness(1.1)}.eventtitle{text-shadow:0 1px 12px #efa9de45}.statusbox{color:#ffd8ed}@media(max-width:380px){.head:before{font-size:19px;right:5px}}
+</style></head><body><div id="onboarding" class="hidden" role="dialog" aria-modal="true" aria-labelledby="guidetitle"><div id="guidepanel"><div id="guideprogress">GUIDE 1 / 4</div><h2 id="guidetitle">🎀 COSPLAYER LIFE</h2><div id="guidebody"></div><div class="guide-actions"><button id="guideskip" class="btn alt" type="button">スキップ</button><button id="guidenext" class="btn" type="button">次へ ♡</button></div></div></div><main class="wrap"><header class="head"><div class="eyebrow">✦ INTERNET COSPLAYER LIFE ✦</div><h1>Cosplayer Life ♡<br><span style="font-size:20px">コスプレイヤー人生</span></h1><button id="helpbtn" type="button">？ 遊び方ガイド</button></header>
+<section class="card"><div class="toprow"><strong id="date">DAY 1 ・18歳・春</strong><span class="badge" id="state">デビュー前</span></div><div class="stats"><div class="stat"><label>♡ 人気</label><div class="value" id="pop">0</div><div class="meter"><span id="popbar" style="width:0%"></span></div></div><div class="stat"><label>💗 メンタル</label><div class="value" id="mind">100 / 100</div><div class="meter"><span id="mindbar" style="width:100%"></span></div></div><div class="stat"><label>⚡ 体力</label><div class="value" id="energy">100 / 100</div><div class="meter blue"><span id="energybar" style="width:100%"></span></div></div><div class="stat"><label>♡ フォロワー</label><div class="value" id="followers">0人</div></div><div class="stat"><label>¥ 所持金</label><div class="value" id="cash">10,000円</div></div><div class="stat"><label>🎭 活動歴</label><div class="value" id="years">0年</div></div></div><div class="statusbox" id="effects"></div><div class="line" id="info">活動タイプ：未設定 / 投稿：未設定 / 仕事：未設定</div></section>
+<section class="card compact-control"><div class="row"><div class="field"><label for="speed">⏩ 進行速度</label><select id="speed"><option value="800">ふつう</option><option value="300">はやい</option><option value="90">超高速</option></select></div><div class="field"><label for="focus">🎀 今の活動方針</label><select id="focus" disabled><option>デビュー準備中</option></select></div></div><div class="controls" style="margin-top:12px"><button class="btn full" id="play" disabled>▶ 自動進行</button></div><div class="tiny" id="hint">イベント時は自動停止します</div></section>
+<section class="card diary-panel" id="diarypanel"><div class="toprow diary-heading"><b>📓 活動日誌</b><span class="tiny">日常・イベントの記録</span></div><div class="logs" id="logs"></div><section class="card hidden" id="eventbox" role="dialog" aria-label="イベント"><div class="eventtag" id="etag">STORY · DAY 1</div><h2 class="eventtitle" id="etitle">18歳、コスプレデビュー！</h2><div class="story" id="estory">フォロワーも知り合いもゼロ。どんなコスプレイヤーになりたい？</div><div class="choices" id="choices"></div><div class="event-result hidden" id="eventresult" aria-live="polite"></div></section></section><div class="toolbar"><button class="btn alt" id="save">💾 セーブ</button><button class="btn alt" id="load">📂 ロード</button><button class="btn ghost" id="reset">↻ 最初から</button></div><p class="tiny" id="savehelp">セーブはこのブラウザ内に保存されます。保存できない環境でもゲームは遊べます。</p><div class="footer">✦ COSPLAYER LIFE 2026 · Ver.3.5 ✦</div></main>
+<script>
+(()=>{'use strict';const $=id=>document.getElementById(id),r=(a,b)=>Math.floor(Math.random()*(b-a+1))+a,cl=(n,a,b)=>Math.max(a,Math.min(b,n)),fmt=n=>Math.round(n).toLocaleString('ja-JP');const PA=['月1','週1','週3','週5','毎日'];const WT=['無職','週2バイト','週4バイト','社員','コスプレ専業','事務所所属','グラビア活動','タレント活動','専業主婦'];const WF=['📱 投稿専念','💄 自分磨き','🎪 イベント専念','💼 お仕事専念','📸 撮影専念','💬 交流専念','🩷 友達と仲良く','💤 おやすみ'];const WTincome=[0,72000,112000,159000,0,190000,235000,300000,0],WTdrain=[0,2,4,7,1,6,7,8,0],paceRate=[1,4,12,20,30],paceDrain=[0,1,3,5,8];let S,timer=null,paused=true,locked=false,ended=false,turn=0;const age=()=>18+Math.floor((S.day-1)/365);const month=()=>Math.floor((S.day-1)%365/30.42)%12;const season=()=>['春','春','春','夏','夏','夏','秋','秋','秋','冬','冬','冬'][month()];const cash=(v)=>S.cash=Math.max(-300000,S.cash+Math.round(v));const effect=(p=0,m=0,e=0,f=0,y=0)=>{if(m<0){const trait=S.resilience??1;m=Math.ceil(m*[.72,1,1.17][trait]);}m=Math.round(m);S.pop=cl(S.pop+p,0,100);S.mind=cl(S.mind+m,0,S.mindMax||100);S.energy=cl(S.energy+e,0,100);S.followers=Math.max(0,Math.round(S.followers+f));cash(y);S.peak=Math.max(S.peak,S.followers);S.earned+=Math.max(0,y)};function log(msg,dayOverride){S.logs.unshift({day:dayOverride===undefined?S.day:dayOverride,msg});S.logs=S.logs.slice(0,110);const box=$('logs');box.textContent='';S.logs.slice(0,20).forEach(x=>{let d=document.createElement('div');d.className='log';let b=document.createElement('strong');b.textContent='DAY '+x.day+' ・'+(18+Math.floor((x.day-1)/365))+'歳';let p=document.createElement('div');p.textContent=x.msg;d.append(b,p);box.append(d)})}
+function render(){ $('date').textContent='DAY '+S.day+' ・'+age()+'歳・'+season();$('state').textContent=ended?'引退':locked?'選択待ち':paused?'一時停止':'オート進行中';$('pop').textContent=S.pop;$('mind').textContent=S.mind+' / '+(S.mindMax||100);$('energy').textContent=S.energy+' / 100';$('followers').textContent=fmt(S.followers)+'人';$('cash').textContent=fmt(S.cash)+'円';$('years').textContent=(Math.floor((S.day-1)/365*10)/10)+'年';$('popbar').style.width=S.pop+'%';$('mindbar').style.width=(S.mind/(S.mindMax||100)*100)+'%';$('energybar').style.width=S.energy+'%';$('info').textContent='活動：'+(S.type<0?'未設定':['動画投稿系','写真投稿系','有名人志向'][S.type])+' / 投稿：'+(S.pace<0?'未設定':PA[S.pace])+' / 仕事：'+(S.job<0?'未設定':WT[S.job])+(S.job===4?'（活動収入は不定期）':S.job===0?'（給与なし）':'')+' / '+(S.partner?'交際中：'+S.partner:'恋人なし')+(S.car?' / '+S.car:'');$('effects').textContent=(S.effects||[]).filter(x=>x.until>S.day).map(x=>'✧ '+x.name+'（残り'+(x.until-S.day)+'日）').join('　');$('play').textContent=paused?'▶ 自動進行':'Ⅱ 一時停止';$('play').disabled=locked||ended;if(S.stage>=3){$('focus').disabled=false;if($('focus').options.length!==WF.length){$('focus').textContent='';WF.forEach((v,i)=>{let o=document.createElement('option');o.value=i;o.textContent=v;$('focus').append(o)})}$('focus').value=S.focus}else $('focus').disabled=true}
+function stop(){paused=true;if(timer){clearInterval(timer);timer=null}if(S)render()}function play(){if(locked||ended||S.stage<3)return;stop();paused=false;timer=setInterval(tick,Number($('speed').value));render()}
+function resultView(before,res){
+ const fields=[['♡ 人気',S.pop-before.pop,''],['💗 メンタル',S.mind-before.mind,''],['⚡ 体力',S.energy-before.energy,''],['♡ フォロワー',S.followers-before.followers,'人'],['¥ 所持金',S.cash-before.cash,'円']];
+ const box=$('eventresult');if(!box)return;box.textContent='';box.classList.remove('hidden');
+ const head=document.createElement('div');head.className='result-heading';head.textContent='✦ 選択の結果！';box.append(head);
+ const desc=document.createElement('p');desc.textContent=res||'あなたの決断がこれからの人生に影響する。';box.append(desc);
+ const row=document.createElement('div');row.className='result-delta';let any=false;
+ fields.forEach(([label,value,unit])=>{if(value===0)return;any=true;let chip=document.createElement('span');chip.className='delta-chip';chip.textContent=label+' '+(value>0?'+':'')+fmt(value)+unit;row.append(chip)});
+ if(!any){let chip=document.createElement('span');chip.className='delta-chip';chip.textContent='ステータス変化なし';row.append(chip)}box.append(row);
+}
+function focusEvent(){const box=$('eventbox');if(box&&!box.classList.contains('hidden'))box.scrollTop=0;}
+// Ver.3.5：選択の結果は固定ではない。契約・退職・購入等の確定行為を覆さず、
+// 交流・撮影・投稿等の反応に、選択内容と状況に応じた予測不能な展開を加える。
+function randomOutcome(title,choice,base){
+ const label=choice.label||'';
+ if(S.stage<4||ended)return {story:base,grade:null};
+ // すでに明確なランダム分岐・失敗結果を持つ結果へ無関係な展開を重ねない。
+ if(/できなかった|足りな|見送った|諦めた|中止|無理だった|炎上|揉め|問題|トラブル|不快|嫌な思い|しつこ|落選|断られ|復旧|当選|売れ残り|高額修理|バズり|バズった/.test(base))return {story:base,grade:null};
+ // 選択した仕事、引退、結婚、引っ越し、購入、休息などを抽選で取り消さない。
+ if(/仕事を変える|お仕事を変える|生活のためのお仕事|最初の|引退|破産|車を買|免許|引っ越し|結婚|転職|プロポーズ|金欠/.test(title))return {story:base,grade:null};
+ if(/引退|退職|辞め|社員|アルバイト|バイト|無職|専業|所属|タレント|グラビア|買う|購入|申し込む|節約|見送|休む|休止|おやすみ|休養|帰る|断る|距離を置く|中止/.test(label))return {story:base,grade:null};
+ // マイナス効果込みの元の結果を、良い結果として上書きしてしまわない。
+ const cautious=/確認|調べ|相談|丁寧|話し合|条件|友達と|通報|予定/.test(label);
+ const bold=/受ける|挑戦|参加|頼む|投稿|撮影|依頼|反論|公表|交流/.test(label);
+ const roll=Math.random();
+ const badRate=cautious?.17:bold?.31:.24;
+ const goodRate=cautious?.32:bold?.41:.37;
+ const subject=/彼氏|恋人|旦那|交際|記念日|デート/.test(title)?'恋人':/友達|併せ|アフター/.test(title)?'友達や参加者':/仕事|案件|PR|企業/.test(title)?'仕事相手':/撮影|カメラ|写真/.test(title)?'撮影相手':/ファン|グッズ/.test(title)?'ファン':/炎上|SNS|加工|投稿|Xで/.test(title)?'SNSで見た人':'周囲の人';
+ if(roll<badRate){
+  const severe=!cautious&&Math.random()<.09;
+  const loss=severe?30:cautious?r(3,9):r(7,16);
+  effect(0,-loss,severe?-r(2,6):0);
+  if(severe)S.troubles++;
+  const incident=cautious?'慎重に進めて大きな損失は避けられたものの、思ったようにはいかなかった。':severe?'思いがけない行き違いが大きなトラブルに発展し、ひどく落ち込んだ。':'期待した反応が得られず、少し気疲れしてしまった。';
+  return {story:base+'\n🥀 その後、'+subject+'とのやり取りで予想外の展開に。'+incident,grade:'BAD'};
+ }
+ if(roll<badRate+goodRate){
+  effect(0,r(3,8),0,r(0,25));
+  return {story:base+'\n✨ さらに'+subject+'から嬉しい反応があり、思いがけず良い一日になった！',grade:'HAPPY'};
+ }
+ return {story:base+'\n🌸 その後は大きな波乱もなく、いつもどおりの日常に戻った。',grade:'NORMAL'};
+}
+function ask(title,text,opts,after){
+ stop();locked=true;turn++;const localTurn=turn;
+ const box=$('eventbox');box.classList.remove('hidden');box.classList.add('event-active');
+ $('etag').textContent='✦ SPECIAL EVENT · DAY '+S.day;
+ $('etitle').textContent=title;
+ $('estory').textContent='新しい出来事が発生しました。タップして内容を確認！';
+ $('choices').textContent='';$('eventresult').textContent='';$('eventresult').classList.add('hidden');
+ const reveal=document.createElement('button');reveal.type='button';reveal.className='btn full stage-button';reveal.textContent='💌 イベントを見る ▶';
+ $('choices').append(reveal);
+ reveal.addEventListener('click',()=>{
+  if(!locked||localTurn!==turn)return;
+  $('estory').textContent=text;
+  $('etag').textContent='✦ 選択イベント · DAY '+S.day;
+  $('choices').textContent='';
+  opts.forEach((o,i)=>{
+   const btn=document.createElement('button');btn.type='button';btn.className='choice';btn.textContent=(i+1)+'．'+o.label;
+   if(o.help){const sm=document.createElement('small');sm.textContent=o.help;btn.append(sm)}
+   btn.disabled=!!o.disabled;
+   btn.addEventListener('click',()=>{
+    if(!locked||localTurn!==turn)return;
+    const before={pop:S.pop,mind:S.mind,energy:S.energy,followers:S.followers,cash:S.cash};
+    let res=o.act?o.act():'';const fate=randomOutcome(title,o,res);res=fate.story;if(!ended&&/休む|休養|休止|休憩|ゆっくり|今日は休む/.test(o.label)){const long=/休止/.test(o.label),week=/1週間|一週間|数日/.test(o.label);effect(0,long?20:week?10:4,long?25:week?15:7);if(long){S.hiatusUntil=Math.max(S.hiatusUntil||0,S.day+90);S.focus=7;}}
+    if(ended)return;
+    // 状態を内部に保持し、結果確認までは画面上のステータスを変更しない。
+    const outcome={pop:S.pop,mind:S.mind,energy:S.energy,followers:S.followers,cash:S.cash};
+    $('choices').textContent='';$('etag').textContent='✦ EVENT RESULT · DAY '+S.day;
+    const delta=(outcome.mind-before.mind)+(outcome.energy-before.energy)+(outcome.pop-before.pop);
+    const bad=/怖|不安|炎上|トラブル|拒絶|失敗|断念|減少|傷|凍結|破局|揉め/.test(res)||delta< -12;
+    const happy=/成功|バズ|仲良く|楽しく|達成|獲得|回復|当選/.test(res)&&!bad;
+    $('etitle').textContent=fate.grade==='BAD'?'🥀 BAD RESULT':fate.grade==='HAPPY'?'✨ HAPPY RESULT':fate.grade==='NORMAL'?'🌸 NORMAL RESULT':bad?'🥀 BAD RESULT':happy?'✨ HAPPY RESULT':'🌸 NORMAL RESULT';
+    $('estory').textContent='この選択で、こんな出来事が起きました。';
+    resultView(before,res);
+    // 描画前の数値を保ったまま確認を待つ（適用は次ボタンで確定）。
+    S.pop=before.pop;S.mind=before.mind;S.energy=before.energy;S.followers=before.followers;S.cash=before.cash;
+    const confirm=document.createElement('button');confirm.type='button';confirm.className='btn result-continue';confirm.textContent='結果を反映して次へ ▶';
+    $('eventresult').append(confirm);
+    confirm.addEventListener('click',()=>{
+     if(!locked||localTurn!==turn)return;
+     S.pop=outcome.pop;S.mind=outcome.mind;S.energy=outcome.energy;S.followers=outcome.followers;S.cash=outcome.cash;
+     locked=false;S.actions=S.actions||{};const k=/休|休止|見送|断る|距離を置く/.test(o.label)?'rest':/友達|相談|仲良|恋人|デート/.test(o.label)?'care':/仕事|お金|貯|節約|中古/.test(o.label)?'practical':/投稿|撮影|併せ|イベント|コスプレ|買う/.test(o.label)?'drive':'balanced';S.actions[k]=(S.actions[k]||0)+1;log(o.label+(res?' — '+res:''));render();
+     $('eventresult').classList.add('hidden');box.classList.remove('event-active');box.classList.add('hidden');
+     if(S.reflectionQueue){let cause=S.reflectionQueue;S.reflectionQueue=null;lifeReflection(cause);return}if(after){after();return}
+     if(S.mind===0||S.energy===0){crisis();return}
+     if(S.cash< -190000){moneyCrisis();return}
+     $('etag').textContent='✦ DAILY LIFE';$('etitle').textContent='日常が続いていく…';
+     $('estory').textContent='日付は自動で進みます。次の出来事を見守ろう。';
+     play();
+    },{once:true});
+   });
+   $('choices').append(btn);
+  });
+ });
+ render();setTimeout(focusEvent,30);
+}
+const O=(label,act,help)=>({label,act,help});function charge(cost){if(S.cash<cost)return false;cash(-cost);return true}function choicesPace(){ask('最初の投稿ペース','どのくらいの頻度でコスプレ写真・動画を投稿する？',PA.map((x,i)=>O(x+'投稿',()=>{S.pace=i;S.stage=2;return '投稿ペースを決めた。'})),choicesJob)}function choicesJob(){ask('生活のためのお仕事','手元にあるのは10,000円。生活費もコスプレ活動費もかかる。どんな働き方にする？',WT.slice(0,5).map((x,i)=>O(x+(i===0?'（収入なし・自由時間が多い）':i===4?'（会社に勤めず、撮影・グッズ等で不定期収入）':'（月収約'+fmt(WTincome[i])+'円）'),()=>{S.job=i;S.stage=3;return i===4?'コスプレを本業にする！収入は人気と案件次第で不安定。':i===0?'無職として自由に過ごすことにした。定期収入はない。':'働き方を決めた。'})),debut)}function debut(){ask('初めての衣装','初コスプレ！何を着る？', [O('手持ちの服で創作コスプレ',()=>{effect(1,3,-3,r(3,25),0);S.outfits++;return '創作コスプレでデビュー！'}),O('中古衣装を探す（8,000円）',()=>{effect(3,1,-5,r(15,60),-8000);S.outfits++;return '中古衣装で初投稿した！'}),O('衣装は後で。まずバイトを頑張る',()=>{effect(0,3,2,0,0);return 'まずは活動資金を貯めることにした。'})],()=>{S.stage=4;S.next=S.day+r(165,245);$('choices').textContent='';$('etitle').textContent='✦ コスプレ人生がスタート';$('estory').textContent='日付が自動で進んでいます。重要なイベントが発生すると停止するよ。';$('eventbox').classList.add('hidden');$('eventbox').classList.remove('event-active');play()})}
+function recordEvent(){S.events++;S.lastEvent=S.day;S.network+=r(1,2);S.eventPhotos++;effect(r(1,3),r(-5,4),-r(7,16),r(10,Math.max(40,Math.round(S.followers*.016))),-r(3000,13000));log('コスプレイベントに参加！ 撮影・交流を楽しんだ。');}
+function cameraName(){return S.cameraName||'知り合いのカメラマン'}
+function cameraEvent(){if(!S.cameras&&S.day<=1095){ask('イベントで初めての撮影依頼','会場でカメラマンに「撮らせてください！」と声をかけられた。',[O('撮ってもらう',()=>{S.cameras++;S.network++;effect(2,2,-5,r(20,100));return '撮影してもらえた！'}),O('少しだけなら',()=>{S.cameras++;effect(1,1,-2,r(5,35));return '短時間撮影してもらった。'}),O('丁寧に断る',()=>{effect(0,2,0);return '自分のペースを優先した。'})]);return}
+const scenarios=[()=>ask('個人撮影のお誘い',cameraName()+'からスタジオでの個撮に誘われた。料金は約8,000円。',[O('撮影する（8,000円）',()=>{if(!charge(8000))return '予算が足りず今回は見送った。';S.shoots++;let hit=r(0,100)<22;effect(hit?8:3,r(-5,5),-10,hit?r(300,1700):r(40,180));return hit?'撮影写真が大バズり！':'素敵な写真が撮れた。'}),O('条件を確認する',()=>{effect(0,2,0);return r(1,100)<22?'確認したら予想外の追加料金が分かった。今回は見送った。':'内容と費用を確認できた。'}),O('今回は断る',()=>{effect(0,3,1);return '負担を減らせた。'})]),()=>ask('専属カメラマンになりたい',cameraName()+'が「専属で撮りたい」と言ってきた。',[O('専属をお願いする',()=>{S.exclusive=true;effect(2,1,-3);return '今後の撮影機会が増えそう。'}),O('専属じゃなく普通に撮りたい',()=>{effect(0,4,0);return 'お互いの自由を尊重できた。'}),O('条件を聞く',()=>{effect(0,2,0);return '撮影内容と条件を確認した。'}),O('断る',()=>{effect(0,2,0);return r(1,100)<16?'断った後に相手が不満を漏らしていた。少し落ち込んだ。':'断っても問題はなかった。'})]),()=>ask('撮影内容の相談',cameraName()+'からセクシー・フェチ系の撮影をしないかと誘われた。',[O('撮影内容と契約条件を詳しく確認',()=>{effect(0,1,-2);return '希望する範囲を明確にした。'}),O('条件が合えば受ける',()=>{let bad=r(0,99)<24;S.shoots++;effect(bad?0:4,bad?-17:3,-9,r(0,160),bad?0:r(6000,22000));if(bad)S.troubles++;return bad?'事前の話と違う要求があり、嫌な思いをした。':'条件を守った撮影ができた。'}),O('興味がないので断る',()=>{effect(0,3,0);return '自分の希望を優先できた。'}),O('友達に相談する',()=>{effect(0,5,0);return '相談して判断材料が増えた。'})]),()=>ask('写真の掲載トラブル','撮影された写真が確認なしで公開されていた。',[O('掲載者に連絡する',()=>{effect(-1,-6,0,-r(0,60));S.troubles++;return '公開範囲について話し合った。'}),O('信頼できる人に相談',()=>{effect(0,-2,0);S.troubles++;return '対応を一緒に考えてもらえた。'}),O('そのままにする',()=>{effect(-2,-10,0);S.troubles++;return '不安な気持ちが残った。'})])];scenarios[r(0,scenarios.length-1)]()}
+function rideEvent(going){const label=going?'行き':'帰り';let opts=[O('乗せてもらう',()=>{let bad=r(1,100)<(S.trustCamera?15:30);effect(0,bad?-r(9,20):r(2,9),bad?-5:5,r(0,30));if(bad)S.troubles++;else S.trustCamera=true;return bad?'車内でしつこい誘いを受けて嫌な思いをした。':'無事に送ってもらい、少し仲良くなった。'}),O('丁寧に断る',()=>{effect(0,2,0);return '自分の移動手段で向かうことにした。'}),O('友達と一緒なら',()=>{effect(0,3,0);return '同行者の予定を確認した。'}),O('電車・公共交通で移動する',()=>{effect(0,1,-3,0,-900);return '自分で移動した。'})];if(S.car)opts.push(O('自分の車で'+(going?'行く':'帰る')+'から大丈夫！',()=>{effect(0,1,-2,0,-650);return '車で移動した。'}));ask('🚗 '+label+'の送迎の誘い',cameraName()+'が「車で'+(going?'乗せていこうか':'送っていこうか')+'？」と声をかけてきた。',opts)}
+function afterEvent(){ask('イベント帰りのアフター','撮影やイベントが終わった。参加者からご飯に誘われた！',[O('行く（3,500円程度）',()=>{if(!charge(3500))return 'お金が足りず参加できなかった。';S.afters++;S.network++;const bad=r(1,100)<22;effect(0,bad?-r(10,20):r(6,13),-r(6,12),0,0);if(bad){S.troubles++;return '距離感のおかしい人に出会い、嫌な思いをした。'}return ['気の合う友達ができた！','併せに誘われた！','有名レイヤーと知り合った！'][r(0,2)]}),O('今日は行かない',()=>{effect(0,3,5);return '自分の時間を大切にした。'}),O('また今度ね、と伝える',()=>{effect(0,3,2);return '次の機会に参加することにした。'}),O('誰が行くのか聞く',()=>{effect(0,2,1);return '参加メンバーを確認した。'}),O('仲良しが行くなら参加（3,500円）',()=>{if(S.network<2)return '知り合いが少なく、今回は見送った。';if(!charge(3500))return '予算が足りなかった。';S.afters++;effect(0,9,-7);return '友達と楽しく食事できた！'})])}
+function socialEvent(){let common=[()=>ask('写真が少し話題になった','最近の投稿にいいねが増えている！',[O('新作を投稿する（5,000円）',()=>{if(!charge(5000))return '予算不足で手持ちの写真を投稿した。';effect(5,-4,-7,r(200,1200));return 'さらに反応が増えた！'}),O('コメントに返信する',()=>{effect(2,5,-3,r(50,450));return 'フォロワーと交流できた。'}),O('いつも通り続ける',()=>{effect(1,3,1,r(20,160));return '自分のペースで続けた。'})]),()=>ask('何気ないポストが炎上','普段通りに書いた投稿が想定外の意味で広まり、批判が増えている。',[O('説明する',()=>{let b=r(1,100)<30;effect(b?-5:1,b?-20:-9,-3,b?-r(100,600):0);S.fires++;return b?'説明が誤解され、さらに拡散した。':'誤解が徐々に解けた。'}),O('投稿を削除する',()=>{effect(-1,-8,-1,-r(0,90));S.fires++;return '拡散は落ち着き始めた。'}),O('信頼できる人に相談する',()=>{effect(0,-2,0);S.fires++;return '対応について相談できた。'}),O('しばらく休む',()=>{effect(-1,11,12,-r(0,30));S.fires++;return 'SNSから少し距離を置いた。'})]),()=>ask('Xでセンシティブ判定','写真がセンシティブ扱いになり、投稿の表示が減っている。',[O('投稿内容を見直す',()=>{effect(0,-3,-2,-r(0,50));return '投稿方針を調整した。'}),O('他SNSも更新する',()=>{effect(2,-6,-6,r(30,220));return '別の場所でも活動を続けた。'}),O('少し休む',()=>{effect(0,7,8);return '焦らず回復を待つことにした。'})]),()=>ask('アンチからの嫌がらせ','投稿に心ないリプライが届いた。',[O('ミュート・ブロック',()=>{effect(0,3,0);return '距離を置いて活動した。'}),O('相談・通報する',()=>{effect(0,5,0);return '相談して気持ちが落ち着いた。'}),O('反論する',()=>{effect(r(-4,2),-10,-3,r(-60,130));S.troubles++;return '言い合いになって疲れた。'})])];common[r(0,common.length-1)]()}
+function banEvent(){S.bans++;S.xban=true;ask('🚫 Xアカウントが凍結された！','いつものようにXを開くと「アカウントが凍結されています」と表示された。活動をどうする？',[O('異議申し立てをする',()=>{let ok=r(1,100)<55;S.xban=!ok;effect(ok?1:-6,ok?4:-13,-3,ok?0:-Math.round(S.followers*.13));return ok?'アカウントが復旧した！':'復旧できなかった。活動方針を考えよう。'}),O('Instagram・TikTokなど別媒体へ',()=>{S.xban=false;S.type=S.type===1?0:S.type;effect(-3,-7,-8,-Math.round(S.followers*.1));return '活動の場を移して再出発した。'}),O('しばらく休止する',()=>{effect(-4,18,19,-Math.round(S.followers*.12));return '心と体を休めた。'}),O('コスプレを引退する',()=>{finish('SNS凍結をきっかけに引退');return '引退を決めた。'})])}
+function romanceEvent(){if(!S.partner){const types=['コスプレイヤー','一般人','ファン','カメラマン'];let kind=types[r(0,3)];ask('💗 突然の告白',kind+'の男性から「付き合ってほしい」と告白された！',[O('付き合う',()=>{S.partner=kind;S.partnerTrust=65;S.partnerTrait=['supportive','independent','jealous'][r(0,2)];S.loveStart=S.day;effect(0,10,0);S.reflectionQueue='恋人ができた';return kind+'と交際を始めた！'}),O('丁寧に断る',()=>{effect(0,2,0);return '今は自分の生活を優先した。'}),O('もう少し考える',()=>{effect(0,3,0);return '急がず関係を考えることにした。'})]);return}if(!S.married&&S.day-S.loveStart>480&&r(1,100)<35){ask('💍 プロポーズ',S.partner+'の恋人から結婚を申し込まれた！',[O('結婚する',()=>{S.married=true;S.reflectionQueue='結婚';effect(0,14,-1,0,-r(10000,50000));return '二人で新生活を始めた！'}),O('もう少し考えたい',()=>{effect(0,3,0);return 'ゆっくり考えることにした。'}),O('今は活動に集中したい',()=>{effect(0,-2,0);return '気持ちを伝えた。'})]);return}if(r(1,100)<28){ask('恋人とのすれ違い',S.partner==='ファン'?'恋人は応援してくれるけど、イベント続きの生活には少し戸惑っている。':S.partner==='カメラマン'?'恋人が別のレイヤーとの撮影を増やしていて少し気になった。':S.partner==='コスプレイヤー'?'恋人が他のレイヤーと併せをしていて少しモヤモヤする。':'恋人と活動時間についてすれ違いがあった。',[O('話し合う',()=>{effect(0,4,-2);return '落ち着いて気持ちを話せた。'}),O('しばらく距離を置く',()=>{effect(0,-6,1);return '少しさみしくなった。'}),O('別れる',()=>{S.partner=null;S.married=false;S.reflectionQueue='恋人との別れ';effect(0,-14,0);return 'それぞれの道を歩むことにした。'})]);return}let bonus=S.partner==='ファン'?12:S.partner==='一般人'?10:9;effect(0,bonus,-4,0,-r(1000,4500));log(S.partner==='コスプレイヤー'?'恋人と併せを楽しんだ！':S.partner==='カメラマン'?'恋人と撮影を楽しんだ！':'恋人と楽しい休日を過ごした！');play()}
+function rumorEvent(){if(!S.partner)return;ask(S.married?'💍 結婚の噂が広まった':'💔 交際の噂が広まった','あなたと恋人の関係がSNSで噂になった。祝福する人もいれば、批判する人もいる。',[O('公表する',()=>{let bad=r(0,99)<38;effect(bad?-5:3,bad?-12:9,-2,bad?-r(50,Math.max(100,Math.round(S.followers*.12))):r(20,250));if(bad)S.fires++;return bad?'一部のフォロワーが離れた。':'温かい祝福が届いた。'}),O('プライベートなので回答しない',()=>{effect(0,-3,0,-r(0,70));return '活動に集中することにした。'}),O('恋人と相談して対応を決める',()=>{effect(0,5,0);return '二人で相談できた。'}),O('しばらく活動を休む',()=>{effect(-1,14,14);return '落ち着くまで休んだ。'})])}
+function earnEvent(){let category=['カラコンPR','衣装PR','メイク商品のPR','写真集の予約販売','ゲーム関連PR','メディア出演'];const name=category[r(0,5)];ask('💌 '+name+'の依頼','活動を見た企業やファンから依頼が届いた。内容によっては報酬が発生する。',[O('有償なら受ける',()=>{let ok=r(1,100)<(30+S.pop*.45+S.trust*2);if(ok){let pay=r(7000,70000);effect(3,-3,-9,r(50,450),pay);S.jobs++;S.trust++;return fmt(pay)+'円の報酬を受け取った！'}effect(0,-3,-1);return '今回は条件が合わなかった。'}),O('無償提供でも実績を作る',()=>{effect(2,-3,-7,r(20,200));S.trust++;return 'PRの実績が増えた。現金報酬はなし。'}),O('今回は断る',()=>{effect(0,3,2);return '自分の活動を優先した。'}),O('条件と利用範囲を確認する',()=>{effect(0,2,0);return '条件の確認ができた。'})])}
+function expenseEvent(){const list=[['新しいコスプレ衣装',r(7000,30000)],['スタジオ撮影',r(4000,15000)],['ウィッグ・カラコン',r(3000,11000)],['美容院と自分磨き',r(6000,25000)],['遠征の準備',r(20000,50000)]];let [item,cost]=list[r(0,4)];ask('🎀 '+item+'が気になる！','予算は'+fmt(cost)+'円。所持金は'+fmt(S.cash)+'円。どうする？',[O('買う・申し込む（'+fmt(cost)+'円）',()=>{if(!charge(cost))return 'お金が足りず、購入できなかった。';if(item.includes('衣装'))S.outfits++;if(item.includes('撮影'))S.shoots++;effect(3,3,-7,r(20,160));return item+'を楽しんだ！'}),O('少し安い方法を探す',()=>{let c=Math.round(cost*.55);if(!charge(c))return '安くしても予算が足りなかった。';effect(1,2,-4,r(10,80));return fmt(c)+'円で何とか準備できた。'}),O('今回は我慢する',()=>{effect(0,2,2);return '予算を守った。'}),O('お仕事に専念して貯める',()=>{S.focus=3;effect(0,-2,-3);return 'しばらく仕事優先に切り替えた。'})])}
+function friendEvent(){let variants=[()=>ask('友達から併せのお誘い','仲のいいレイヤーが今度の併せに誘ってくれた！',[O('参加する（6,000円）',()=>{if(!charge(6000))return '予算が足りず今回は断った。';S.network+=2;effect(3,6,-10,r(30,170));return '楽しく併せができた！'}),O('見送る',()=>{effect(0,3,2);return 'またの機会にすることにした。'}),O('まず予定を確認する',()=>{effect(0,2,0);return '無理のない計画を立てた。'})]),()=>ask('友達から遊びのお誘い','友達とご飯や買い物に行かない？と誘われた。',[O('遊びに行く（4,000円）',()=>{if(!charge(4000))return '予算不足で見送った。';effect(0,12,-6);S.network++;return '楽しい時間を過ごした！'}),O('おうちで話す',()=>{effect(0,8,0);return 'のんびり過ごせた。'}),O('断る',()=>{effect(0,3,4);return 'ひとり時間を過ごした。'})]),()=>ask('レイヤー同士の揉め事','男女のレイヤー仲間の間で、併せの予定を巡って意見が割れている。',[O('双方の話を聞く',()=>{effect(0,-3,-3);S.network++;return '落ち着いて対応した。'}),O('距離を置く',()=>{effect(0,5,3);return 'トラブルから少し離れた。'}),O('一方の味方をする',()=>{effect(r(-4,2),-10,-2);S.troubles++;return '関係が少し複雑になった。'})])];variants[r(0,variants.length-1)]()}
+function licenseEvent(){S.nextLicense=S.day+r(240,780);ask('🚘 運転免許、取る？','ふと「免許があると便利かも」と考えた。教習所に通うには300,000円ほど必要。',[O('教習所に通う（300,000円）',()=>{if(!charge(300000))return '所持金が足りず今回は断念した。';S.license=true;effect(0,-3,-12);S.nextCar=S.day+r(40,120);return '運転免許を取得した！'}),O('お金がないのでやめる',()=>{effect(0,2,0);return 'また機会があれば考えよう。'}),O('今は必要ない',()=>{effect(0,2,0);return '今の生活を優先した。'})])}
+function carEvent(){S.nextCar=S.day+r(150,490);let options=[O('お金がなくて買えない',()=>{effect(0,1,0);return 'また貯金が増えたら考えよう。'}),O('やっぱり軽でしょ！（400,000円）',()=>{if(!charge(400000))return 'お金が足りず購入できなかった。';S.car='軽自動車';effect(0,2,-2);return '軽自動車を購入！友達と乗り合わせもできそう。'}),O('いや、普通車だね！（900,000円）',()=>{if(!charge(900000))return 'お金が足りず購入できなかった。';S.car='普通車';effect(0,2,-2);return '普通車を購入！友達を乗せてイベントにも行ける。'})];ask('🚗 自分の車、どうする？','免許を取った！ 次は車を買う？ 買わなくても活動は続けられる。',options)}
+function carFriend(){if(!S.car)return;ask('🚗 友達と乗り合わせる？',S.car+'で次のイベントに向かう予定。友達も行くらしい。',[O('友達を乗せていく',()=>{let b=r(1,100)<17;effect(0,b?-7:8,-7,0,b?-r(500,2400):-r(400,1200));if(b){S.troubles++;return 'ガソリン代や待ち合わせで気まずくなった。'}S.network++;return '車内で盛り上がり、仲が深まった！'}),O('ガソリン代を割り勘にする',()=>{effect(0,5,-6,0,-r(100,700));S.network++;return '費用を相談して楽しく移動した。'}),O('今日はひとりで行く',()=>{effect(0,3,-3,0,-r(800,2000));return '自分のペースで移動した。'})])}
+function moneyCrisis(){ask('💸 お金が足りない！','活動費と生活費で、所持金が大きくマイナスになってしまった。どうする？',[O('お仕事に専念する',()=>{S.focus=3;S.job=Math.max(S.job,2);effect(0,-3,-10,0,35000);return '仕事を増やした。'}),O('活動費を減らして休む',()=>{S.focus=7;effect(-1,12,13,0,10000);return '支出を見直した。'}),O('引退する',()=>{finish('資金不足で引退');return '活動終了。'})])}
+function crisis(){ask('🥀 活動の限界','メンタルか体力が限界に近づいている。これからどうする？',[O('しばらく活動を休む',()=>{S.focus=7;effect(-1,24,26);return 'しばらく休んで回復した。'}),O('投稿を減らす',()=>{S.pace=0;effect(0,12,15);return '無理のないペースに切り替えた。'}),O('仕事や生活を優先する',()=>{S.focus=3;effect(0,12,10);return '生活を立て直すことにした。'}),O('引退する',()=>{finish('心身の限界で引退');return '活動を終えることにした。'})])}
+function retireOffer(){ask('🌸 これからの人生','コスプレを始めて'+(age()-18)+'年。これからどう生きよう？',[O('まだまだ続ける',()=>{effect(0,8,9);return '新たな一年へ！'}),O('少し休みながら続ける',()=>{S.focus=7;effect(0,15,17);return '自分のペースで続ける。'}),O('ここで引退する',()=>{finish('自分で決めた引退');return 'あなたの人生を振り返ろう。'})])}
+function simpleDaily(){const arr=[
+()=>{effect(1,1,-1,r(1,10));log('手持ちの衣装で宅コスをした。写真を選んでSNSに投稿した。')},
+()=>{effect(0,4,0);log('好きな作品の話で友達と盛り上がった。')},
+()=>{effect(1,-1,-3,r(12,95),-r(500,1800));log('自宅でメイクとライティングを工夫して撮影した。')},
+()=>{effect(0,4,3);log('写真の加工を仕上げ、のんびり過ごした。')},
+()=>{effect(1,1,-1,r(8,45));log('メイクの練習写真をSNSに投稿した。')},
+()=>{if(S.network>0){effect(0,5,-2,0,-r(500,1700));log('コスプレ友達と次にやりたい作品の話をした。')}else{effect(0,3,1);log('気になる作品を見返し、次のコスプレの案を考えた。')}}
+];arr[r(0,arr.length-1)]()}
+// Ordinary diary entries are based on what the player has actually experienced.
+function everydayDiary(){
+ if(!S.nextDiary)S.nextDiary=S.day+r(3,6);
+ if(S.day<S.nextDiary)return;
+ S.nextDiary=S.day+r(4,8);
+ if(S.partner&&r(1,100)<30){const spouse=S.married?'旦那':'彼氏';const texts=['とおしゃべりして、今日の出来事を聞いてもらった。','と好きな作品の話をした。','に写真を見せたら褒めてくれた！','と次のお出かけの予定を立てた。'];log('💕 '+spouse+texts[r(0,texts.length-1)]);return}
+ if(S.makeupSkill>=5&&r(1,100)<18){log('💄 以前よりメイクやウィッグセットが上達していると実感した。');return}
+ if(S.friendRetired&&r(1,100)<12){log('💌 コスプレを引退した友達と近況を話した。趣味が変わっても大切な友達。');return}
+ if(S.pendingDiary){let d=S.pendingDiary;S.pendingDiary=null;log(d);if(d.includes('併せ')){effect(1,6,-3,r(10,60),-r(500,1500))}return}
+ const items=[
+  ()=>{effect(0,2,-1);log('今日は宅コス。ウィッグを整えて何枚か写真を撮った。')},
+  ()=>{effect(0,0,0);log('過去の写真を整理し、次の投稿を準備した。')},
+  ()=>{effect(0,0,0);log('好きな作品を見ながら、次にやりたいキャラを考えた。')},
+  ()=>{effect(0,1,-1,0,-r(200,900));log('メイク用品を買い足して、新しいメイクを練習した。')},
+  ()=>{effect(0,0,0);log('今日はコスプレをお休み。しっかり寝て休憩した。')},
+  ()=>{effect(0,0,0);log('今日はのんびり休養。写真を眺めたり好きな作品を楽しんだ。')},
+  ()=>{effect(0,0,0);log('衣装を片づけて早めに休んだ。次の活動に備えて気分転換した。')},
+  ()=>{effect(0,0,0);log('宅コスに向けてウィッグをセットし、撮影の構図を考えた。')}
+ ];
+ if(S.network>0){items.push(()=>{effect(0,3,-1);log('友達と次の併せの日程を決め、衣装とウィッグを準備した。');S.pendingDiary='準備していた友達との併せに参加！ 衣装を披露できた。';S.nextDiary=S.day+r(5,9)});items.push(()=>{effect(0,4,-1);log('コスプレ仲間と次の撮影の構図を相談した。')})}
+ if(S.eventPhotos>0)items.push(()=>{effect(0,0,0);log('前に参加したイベントの写真を見返して、投稿する写真を選んだ。')});
+ if(S.shoots>0)items.push(()=>{effect(0,2,-1);log('以前の撮影データを現像・加工して投稿の準備をした。')});
+ if(S.outfits>0)items.push(()=>{effect(0,2,-1);log('持っている衣装を手直しして、次の宅コスに備えた。')});
+ if(S.focus===7)items.push(()=>{effect(0,0,0);log('今日は撮影をお休み。好きなことをして休憩した。')});
+ if(S.focus===3)items.push(()=>{effect(0,0,0);log('仕事が終わったあと、無理せず次の衣装の資料を眺めた。')});
+ items[r(0,items.length-1)]();
+}
+
+
+function resilienceIncident(){
+ const trait=S.resilience??1;const bold=trait===0;const candid=trait===2;
+ if(bold){ask('🔥 つい余計な発言を……','SNSで軽い冗談を投稿したら、一部の人に誤解されてしまった！',[O('言葉足らずだったと説明する',()=>{S.fires++;effect(-3,-6,-1,-r(20,140));return '誤解は少しずつ解けたが、批判も受けた。'}),O('投稿を削除して反応を見守る',()=>{effect(-1,-3,0,-r(5,60));return 'これ以上の拡散を抑えた。'}),O('意見を押し通す',()=>{S.fires++;effect(-7,-9,-2,-r(70,400));addStatus('炎上中',35);return '議論が大きくなり炎上してしまった。'})]);}
+ else if(candid){ask('🥀 投稿する前に迷ってしまう','SNSでの反応が気になり、投稿ボタンを押すのが少し怖い。',[O('文章を見直して投稿する',()=>{effect(1,-2,-2,r(15,75));return '丁寧に投稿できて安心した。'}),O('友達に見てもらう',()=>{effect(0,5,-2,r(5,45));return '相談して少し落ち着いた。'}),O('今日は休む',()=>{return '投稿を休んで気持ちを整えた。'})]);}
+ else{ask('📱 SNSで少し迷った','写真と一緒に投稿する文章をどうしよう？',[O('素直に感想を書く',()=>{effect(1,1,-1,r(10,80));return '好意的な反応が届いた。'}),O('少し考えてから投稿',()=>{effect(0,2,-1,r(8,50));return '落ち着いて投稿できた。'}),O('今日は休む',()=> 'ひと息ついた。')]);}
+}
+function negativeLifeEvent(){let scenes=[
+ ['📦 衣装の配送が遅れた','撮影までに注文した衣装が届かない！',['キャンセルして手持ちで撮る','別の衣装を買う（8,000円）','撮影日を調整する']],
+ ['🥀 併せで気まずい雰囲気','併せのグループ内で意見が食い違ってしまった。',['落ち着いて話し合う','別の友達に相談する','今回は参加を見送る']],
+ ['📉 投稿が伸びない','時間をかけて投稿した写真の反応が少なかった。',['次の作品を準備する','投稿内容を研究する','SNSから少し離れる']],
+ ['💸 急な修理費','ウィッグと衣装に修理が必要になった。',['修理を頼む（6,000円）','自分で直す','イベントを見送る']],
+ ['💬 知らない人からの陰口','SNSで自分の写真を悪く言う投稿を見かけた。',['ミュートして距離を置く','信頼できる人に相談','投稿をしばらく控える']]
+ ];const [title,story,labels]=scenes[r(0,scenes.length-1)];ask(title,story,labels.map((label,i)=>O(label,()=>{const money=label.includes('8,000')?8000:label.includes('6,000')?6000:0;if(money&&!charge(money))return '予算が足りず、別の方法を考えることにした。';effect(i===0?1:0,-r(3,12),-r(2,7));return i===2?'負担を減らしてやり過ごした。':i===1?'少し苦労したが対処できた。':'予想外の出来事で疲れてしまった。'})))}
+function costumeShopEvent(){
+ const outfitOptions=[
+  [100000,'👑 オーダーメイド',()=>{let viral=r(1,100)<42;S.outfits++;S.quality=(S.quality||0)+4;effect(viral?12:4,viral?12:6,-6,viral?r(1200,6000):r(90,450),-100000);return viral?'最高級の衣装が完成し、写真が万バズ！':'高品質の衣装で作品の完成度が上がった！'}],
+  [30000,'💎 高品質な既製品',()=>{S.outfits++;S.quality=(S.quality||0)+2;effect(4,6,-3,r(90,380),-30000);return '再現度をフォロワーに褒められた！'}],
+  [10000,'📦 ネット通販',()=>{S.outfits++;const good=r(1,100)<56;S.quality=(S.quality||0)+(good?2:0);effect(good?2:0,good?5:-11,-2,good?r(30,140):0,-10000);return good?'予想以上の品質！買ってよかった！':'写真と違って期待外れ……メンタルが下がった。'}],
+  [5000,'🛍️ 中古サイト',()=>{S.outfits++;let good=r(1,100)<55;S.quality=(S.quality||0)+(good?1:0);effect(good?1:0,good?7:-14,-2,good?r(10,90):0,-5000-(good?0:r(1000,4000)));return good?'掘り出し物だった！':'破損が見つかり、出品者とのトラブルに……。'}]
+ ];let opts=outfitOptions.map(([price,name,fn])=>O(name+'｜'+fmt(price)+'円',fn,'現在の所持金：'+fmt(S.cash)+'円'));
+ for(let i=0;i<opts.length;i++)opts[i].disabled=S.cash<outfitOptions[i][0];
+ opts.push(O('今回は買わず、手持ちの衣装を使う',()=>{effect(0,1,-1);return '今ある衣装を大切に使うことにした。'}));
+ ask('👗 新しいコスプレ衣装を買う！','欲しい衣装が見つかった！どこで買おう？価格によって品質・成功・トラブルが変わる。',opts)
+}
+function lifeReflection(cause,after){
+ ask('🌸 人生の節目｜コスプレを続ける？',cause+'。これからの生活と趣味について考えた。',[O('今までどおり活動する',()=>{effect(0,2,-2);return 'コスプレをこれからも続ける！'}),O('投稿ペースを減らして両立する',()=>{S.pace=Math.max(0,S.pace-1);effect(0,5,3);return '少しゆっくり活動することにした。'}),O('仕事や恋人との時間を優先する',()=>{S.focus=S.partner?6:3;effect(0,3,1);return '生活のバランスを見直した。'}),O('しばらく活動を休止する',()=>{S.focus=7;S.hiatusUntil=S.day+120;effect(-1,3,2);return 'しばらく投稿を減らし、生活を整える。'}),O('ここでコスプレを引退する',()=>{finish(cause+'を機に引退');return '自分で引退を決めた。'})],after)
+}
+function mandatoryMove(){
+ const reg=['🌾 地方都市','🗼 東京23区','🐙 大阪市','🚃 首都圏郊外'];
+ ask('🏠 必須イベント｜新生活の引っ越し','22歳、仕事や暮らしの転機を迎えた。必ず新しい土地へ引っ越す。どこに住もう？',reg.map((name,i)=>O(name+'（生活費 約'+fmt([60000,110000,85000,80000][i])+'円/月）',()=>{S.region=i;S.moved=true;const cost=[70000,180000,120000,110000][i];cash(-cost);effect(i===1?2:0,-2,-4);log('新しい住まいは'+name+'。引っ越し費用 '+fmt(cost)+'円。');return name+'で新生活が始まった！費用とイベント機会が変化した。'})),()=>lifeReflection('就職・引っ越し'))
+}
+function fanContactEvent(){const odd=r(1,100)<(23+Math.min(32,Math.round(S.pop*.35)));if(odd){ask('💌 距離感のおかしいファン','以前からのファンが特別扱いや私生活の情報を繰り返し求めてくる。',[O('境界線をはっきり伝える',()=>{effect(0,-2,-1);return '必要な距離感を説明した。'}),O('返信せずミュートする',()=>{effect(0,2,0);return '連絡から距離を置いた。'}),O('ブロック・通報する',()=>{effect(0,3,0);return '安全を優先して対処した。'}),O('友達に相談する',()=>{effect(0,5,-1);return '一人で抱え込まずに相談できた。'})]);}else{ask('💌 ファンからの応援','いつも投稿を見てくれるファンから、嬉しいメッセージが届いた。',[O('ありがとうと返信する',()=>{effect(1,7,-1,r(10,80));return '応援に励まされた！'}),O('次の作品で応える',()=>{effect(2,4,-4,r(50,220));return '投稿を喜んでもらえた！'}),O('今日はSNSを閉じる',()=>{effect(0,1,0);return '落ち着いて過ごした。'})])}}
+function relationshipEvent(){if(!S.partner)return;const kind=S.partner;const positive=r(1,100)<58;const data={
+ 'コスプレイヤー':positive?['カップル併せ！','二人で好きな作品の併せに挑戦した。','一緒の写真が評判になった！']:['彼氏が嫉妬している','別の男性レイヤーとの併せに、彼氏が不機嫌になった。','落ち着いて活動の自由について話し合った。'],
+ 'カメラマン':positive?['恋人の撮影が大成功','彼氏があなたのコスプレを丁寧に撮ってくれた。','素敵な写真でフォロワーから褒められた！']:['撮影のことで喧嘩','他のカメラマンとの撮影について彼氏に不満を言われた。','活動と交際の境界線を話し合った。'],
+ 'ファン':positive?['一番の応援者','彼氏が新作を褒めて励ましてくれた。','温かい応援が心に響いた！']:['ファンだった頃との違い','交際前のファンサービスとの違いに、彼氏が戸惑っている。','恋人とファンの距離感を話し合った。'],
+ '一般人':positive?['彼氏がコスプレに興味！','コスプレに詳しくない彼氏がイベントに付き添ってくれた。','一緒に楽しい休日を過ごせた！']:['デートとイベントの予定が重なった','彼氏との約束とコスプレイベントが同じ日になった。','別の日にデートを調整した。']};
+ const [title,story,win]=data[kind]||data['一般人'];
+ ask((positive?'💕 HAPPY｜':'🥀 BAD｜')+title,story,[O('しっかり話し合う',()=>{effect(0,positive?10:2,-2);return win}),O('コスプレ活動を優先する',()=>{effect(positive?3:1,positive?3:-9,-6,r(30,180));return positive?'作品が少し話題になった！':'気持ちがすれ違ってしまった。'}),O('恋人との時間を大切にする',()=>{effect(0,positive?12:5,-2,0,-r(800,4500));return '二人で過ごす時間を作った。'}),...(positive?[]:[O('別れを選ぶ',()=>{S.partner=null;S.married=false;effect(0,-12,0);return '交際を終えた。'},null)])],()=>{if(!S.partner&&!S.married)lifeReflection('恋人との別れ')})
+}
+function newLifeEvent(){const list=[
+ ()=>costumeShopEvent(),
+ ()=>ask('📱 投稿が思うように伸びない','頑張って写真を投稿したけれど、反応が少ない。どうする？',[O('写真を見直す',()=>{effect(1,-2,-3,r(10,70));return '加工や構図を工夫して次に備えた。'}),O('他のSNSも試す',()=>{effect(1,-3,-4,r(30,150));return '新しい人に作品を見てもらえた。'}),O('今日は休憩',()=>{effect(0,6,8);return '数字から離れて気持ちを整えた。'})]),
+ ()=>ask('💄 メイクの研究','新しいキャラに合わせてメイクを練習したくなった。',[O('新しいコスメを買う（4,000円）',()=>{if(!charge(4000))return '予算不足で購入は見送った。';effect(2,4,-2);return '理想のメイクに近づけた。'}),O('手持ちのコスメで練習',()=>{effect(1,3,-2);return '少しずつ技術が上達した。'}),O('今日は早く寝る',()=>{effect(0,5,9);return 'しっかり休んで体力を回復した。'})]),
+ ()=>ask('📦 衣装の小さなトラブル','衣装を試着したらファスナーが壊れていた！ 次の撮影に間に合うかな？',[O('自分で直す',()=>{effect(1,-1,-6,0,-1200);return '少し苦労したけれど修理できた！'}),O('お直しに出す（5,000円）',()=>{if(!charge(5000))return '予算不足で今回は諦めた。';effect(0,2,1);return 'プロに任せて安心した。'}),O('別の衣装に変更',()=>{effect(0,2,2);return '予定を変えて気持ちを切り替えた。'})]),
+ ()=>ask('☕ 気分転換の日','久しぶりに何も予定のない休日。どう過ごす？',[O('家でゆっくり休む',()=>{effect(0,10,13);return '心も体もリフレッシュ！'}),O('気になっていたカフェへ（2,000円）',()=>{if(!charge(2000))return '家でのんびり過ごした。';effect(0,8,5);return 'いい気分転換になった。'}),O('次の撮影を準備',()=>{effect(1,2,-3);return '衣装の確認が終わった。'})])
+];list[r(0,list.length-1)]()}
+function collaboratorEvent(){ask('🎭 コラボのお誘い','以前イベントで知り合ったレイヤーから一緒に撮影しないかと誘われた。',[O('スタジオ併せをする（6,000円）',()=>{if(!charge(6000))return 'お金が足りず今回は見送った。';S.shoots++;effect(3,6,-8,r(80,320));S.network++;return 'みんなで素敵な写真を撮れた！'}),O('宅コスでオンライン併せ',()=>{effect(2,4,-3,r(30,150));return 'おうちから楽しく参加した。'}),O('次の機会にする',()=>{effect(0,3,5);return '無理のない予定を優先した。'})])}
+function addStatus(name,duration){if(!S.effects)S.effects=[];S.effects=S.effects.filter(x=>x.name!==name);S.effects.push({name,until:S.day+duration});log('状態変化：'+name+'（'+duration+'日間）')}
+function specialEvent(){let kinds=['viral','editing','celebrity','fame','friend','photographer'];let id=kinds[r(0,kinds.length-1)];if(id==='fame'&&S.fame<1)id='viral';if(id==='friend'&&S.network<1)id='viral';if(id==='photographer'&&S.cameras<1)id='viral';
+if(id==='viral'){ask('🌟 SPECIAL｜突然の万バズ！','何気なく投稿したコスプレ写真が1万いいね突破！通知が止まらない。テレビ局から取材の打診も届いた。',[O('テレビ取材を受ける',()=>{S.viral++;S.fame++;effect(14,-5,-10,r(6500,30000),r(5000,40000));addStatus('注目のコスプレイヤー',45);return 'テレビで紹介されて有名レイヤーに！企業からも注目された。'}),O('取材内容と条件を確認する',()=>{S.viral++;effect(8,3,-3,r(2000,11000));addStatus('バズの勢い',35);return '慎重に取材条件を確認。写真の反響が続いた！'}),O('SNS活動に専念する',()=>{S.viral++;effect(6,-4,-8,r(3500,17000));addStatus('バズの勢い',30);return '番組には出なかったけれどSNSで大きく成長した。'}),O('今回は断る',()=>{S.viral++;effect(3,5,1,r(900,4300));return '取材は見送り、自分のペースを選んだ。'})]);return}
+if(id==='editing'){ask('🔥 SPECIAL｜加工がひどいと晒された！','あなたの写真が第三者に無断転載され、「加工しすぎ」と批判する投稿が拡散されている。',[O('無断転載を通報する',()=>{effect(-2,-12,-2,-r(90,950));addStatus('投稿への不安',35);return '通報した。気持ちが落ち込み、しばらく投稿が怖くなった。'}),O('加工について説明する',()=>{const b=r(0,1);effect(b?-7:2,b?-19:-8,-3,b?-r(100,1900):r(100,2000));if(b)addStatus('炎上中',35);return b?'説明が曲解され論争が続いてしまった。':'説明を応援してくれる人が現れた。'}),O('距離を置いて休む',()=>{effect(-1,7,12,-r(0,180));addStatus('活動意欲低下',24);return 'しばらくSNSと距離を置いた。'}),O('気にせず作品を投稿する',()=>{effect(2,-11,-6,r(100,3500));return '一部の批判を受けながらも作品を届けた。'})]);return}
+if(id==='celebrity'){ask('👑 SPECIAL｜有名人に紹介された！','大物インフルエンサーがあなたのコスプレを紹介！「超可愛い！」「加工すごい」コメント欄は賛否両論。',[O('お礼を伝えて交流する',()=>{const bad=r(1,100)<30;effect(bad?-4:12,bad?-16:9,-5,r(1800,24000));if(bad)addStatus('加工論争',40);else addStatus('バズの勢い',35);S.fame++;return bad?'注目は集まったが加工への批判も広がった。':'絶賛されて一気にフォロワーが増えた！'}),O('メイク動画で実力を見せる',()=>{effect(10,-4,-13,r(1800,16000),-3500);addStatus('バズの勢い',30);S.editing++;return 'メイク工程が話題になり、別方向でバズった！'}),O('静観する',()=>{effect(4,2,1,r(500,6500));return '騒ぎが落ち着くのを待ち、自然に新しい人が増えた。'})]);return}
+if(id==='fame'){ask('🥀 SPECIAL｜有名になって冷たいと言われた','最近忙しくて友達と会えていない。以前の知り合いが「売れたら態度変わったね」と投稿したらしい。',[O('友達と時間を作る',()=>{S.friendship+=3;effect(-1,10,-9,0,-3500);return '仕事の予定を調整して、友達と話し合えた。'}),O('忙しい事情を説明する',()=>{S.friendship+=1;effect(0,1,-3);return '少しずつ誤解が解けた。'}),O('仕事に集中する',()=>{S.friendship-=3;effect(4,-8,-8,r(100,600),r(6000,32000));addStatus('疎遠な友人関係',50);return '活動は順調。しかし昔の友達とは少し距離ができた。'}),O('SNSで反論する',()=>{S.friendship-=2;effect(-6,-17,-4,r(-1200,1200));addStatus('炎上中',40);S.fires++;return '反論が広まってさらに騒動になった。'})]);return}
+if(id==='friend'){ask('💔 SPECIAL｜嫉妬と噂','仲のよかったレイヤーが意味深な投稿をしている。「最近、有名になった人って……」自分のことかもしれない。',[O('本人に静かに確認',()=>{effect(0,2,-3);S.friendship++;return '話し合いの機会ができた。'}),O('何も反応しない',()=>{effect(0,-4,1);return '噂が自然に落ち着くのを待った。'}),O('友達に相談',()=>{effect(0,6,-2);return '事情を話して少し落ち着いた。'}),O('SNSで反論',()=>{effect(-5,-13,-4,-r(0,700));S.fires++;addStatus('炎上中',32);return '応酬が広まり、界隈で話題になってしまった。'})]);return}
+ask('📸 SPECIAL｜撮影後の思わぬ展開','腕のいいカメラマンの写真が注目された。しかし撮影条件や距離感に違和感もある。',[O('次も撮影を頼む',()=>{const bad=r(1,100)<36;effect(bad?-4:8,bad?-17:7,-9,r(80,4500),-6000);if(bad)addStatus('撮影への不安',50);return bad?'撮影中に不快な要求をされ、しばらく撮影を避けたくなった。':'完成した写真がバズった！'}),O('条件を確認してから判断',()=>{effect(1,3,-1);return '相手の条件を確認してから撮影を決めた。'}),O('断って距離を置く',()=>{effect(0,5,2);return '自分の判断を大切にした。'})])}
+
+function jobChangeEvent(){
+ const all=['社員','週4バイト','週2バイト','無職','コスプレ専業','事務所所属','グラビア活動','タレント活動','専業主婦'];
+ const index=[3,2,1,0,4,5,6,7,8];
+ let opts=all.map((v,i)=>{const job=index[i];const premium=job>=5&&job<=7,eligible=S.pop>=62&&S.followers>=22000;const married=job===8;
+ return {...O(v+(job===S.job?'（現在の仕事）':''),()=>{if(job===S.job)return '今の仕事を続けることにした。';if(premium&&r(1,100)<28){effect(0,-6,-2);return '審査に落ちてしまった。今の仕事を続ける。'}S.job=job;S.reflectionQueue='働き方が変わった';let bad=r(1,100)<29;effect(0,bad?-8:4,-3);return job===4?(bad?'コスプレを本業にしたけれど、案件がなかなか来ない。収入は不安定。':'コスプレの仕事を探しながら活動を始めた！'):job===0?'仕事を辞めて無職になった。定期収入はなくなる。':bad?'新しい職場が少し合わない。ストレスはあるけれど働き続ける。':'新しい働き方が始まった！'}),disabled:(premium&&!eligible)||(married&&!S.married)};
+ });opts.push(O('今の仕事を続ける',()=> '今の生活を続けることにした。'));
+ ask('💼 お仕事を変える？','仕事とコスプレのバランスを見直す時期。人気レイヤーなら芸能の仕事にも挑戦できる。',opts);
+}
+function moneyReflection(){ask('💸 このままだと金欠！','生活費と衣装代が重なり、お財布がピンチ。コスプレを続ける？',[
+ O('まだ続ける！ 仕事も頑張る',()=>{S.focus=3;return '生活を立て直すため仕事を優先する。'}),
+ O('活動を減らして節約',()=>{S.pace=0;S.focus=3;return '大きな出費を控えることにした。'}),
+ O('しばらく休止する',()=>{S.focus=7;return '活動費を抑えながら心身を休める。'}),
+ O('コスプレを引退する',()=>{finish('金欠を機に引退');return '引退を決めた。'})]);}
+function healthIncident(){S.lowEpisodes=(S.lowEpisodes||0)+1;
+ if(S.lowEpisodes>=3&&S.job>0&&S.job<5&&r(1,100)<26){S.job=0;S.jobLostUntil=S.day+180;S.nextJobOffer=Math.max(S.nextJobOffer||0,S.jobLostUntil+r(30,190));ask('🚪 限界が続いて仕事を辞めてしまった','何度も体調を崩していた。ある日、衝動的に退職してしまった。',[
+ O('少し休養して立て直す',()=>{effect(0,14,18);return '無職になった。落ち着いたら仕事を探そう。'}),O('再就職に向けて準備する',()=>{effect(0,5,8);return '今は心身を整えながら、次に働く準備をすることにした。'})]);return}
+ const ill=S.energy<30;
+ ask(ill?'🏥 体調が悪くなった':'🥀 ストレスがたまっている',ill?'無理が続いて病院に行くことになった。':'気持ちが沈んで、思い切り買い物をしたくなってしまう。',[
+ O(ill?'診察を受けて休む（15,000円）':'買い物で発散する（30,000円）',()=>{effect(0,ill?5:2,ill?10:0,0,ill?-15000:-30000);return ill?'診察を受けた。出費は痛いけど休息を取れた。':'一時的に気分転換できたものの、お財布は痛手……。'}),
+ O('友達に相談して休む',()=>{effect(0,12,14,0,-1200);return '親しい人と話して少し気持ちが軽くなった。'}),
+ O('1週間ゆっくり休む',()=>{effect(0,15,25);S.day+=7;return 'しばらく休んで回復した。'})]);}
+function shockEvent(){const car=S.car&&r(1,100)<38;
+ if(car){ask('🚗 レア｜車をぶつけてしまった！','修理に出すことになった。保険の補償はどうなる……？',[
+ O('保険会社に相談して修理する',()=>{const covered=r(0,1)===1;effect(0,covered?1:-8,-3,0,covered?-9000:-105000);return covered?'保険で大部分が補償された！':'補償範囲外が多く、修理代が高額になった……。'}),O('修理を見積もる',()=>{const cost=r(1,100)<50?20000:90000;effect(0,-4,-2,0,-cost);return cost<30000?'小さな修理で済んだ！':'大がかりな修理になった……。'})]);return}
+ ask('🚃 急な帰省！','急用で地元に帰ることになった。往復の交通費が思ったより高い。',[
+ O('急いで帰省する',()=>{const price=[9000,39000,28000,24000][S.region||0];effect(0,-2,-6,0,-price);return '往復の交通費が痛い出費になった。'}),
+ O('安い移動手段を探す',()=>{const price=[6000,28000,18000,15000][S.region||0];effect(0,-5,-10,0,-price);return '節約できたけれど長距離移動で疲れた。'})]);}
+
+// Ver.3.5 – 併せ・撮影・ファンの熱量・グッズ・家族・恋愛の継続イベント
+function pivotal(label){S.turningPoints=S.turningPoints||[];if(!S.turningPoints.includes(label))S.turningPoints.push(label);if(S.turningPoints.length>12)S.turningPoints.shift()}
+function extraCosplayEvent(){
+ const variants=[
+ ()=>ask('🎭 併せで配役トラブル','大型併せで、参加者がキャラの配役について不満を言い始めた。主催者も困っている。',[
+ O('主催者に相談する',()=>{const ok=r(1,100)<68;effect(0,ok?5:-13,-2);S.network+=ok?1:0;return ok?'主催者がうまく調整してくれた！':'話がこじれて気まずくなった……。'}),
+ O('相手に譲る',()=>{const ok=r(1,100)<72;effect(0,ok?7:-9,-2);return ok?'相手が感謝してくれて次の併せに誘われた。':'譲ったのに別の問題まで起きて疲れた。'}),
+ O('予定通り参加する',()=>{let ok=r(1,100)<45;effect(ok?2:0,ok?8:-18,-7,r(0,110),-2500);return ok?'みんなで撮影を楽しめた！':'集合写真の空気が悪く、精神的に疲れてしまった。'}),
+ O('辞退して休む',()=>{effect(0,5,7);return '今回は無理せず見送った。'})]),
+ ()=>ask('📸 撮影データが届かない！','撮影から1か月。約束の写真がまだ届かない。',[
+ O('丁寧に催促する',()=>{let ok=r(1,100)<64;effect(ok?2:0,ok?5:-12,-1,r(0,100));return ok?'素敵な写真を送ってもらえた！':'既読だけついて、返信が来なかった。'}),
+ O('もう少し待つ',()=>{let ok=r(1,100)<50;effect(0,ok?3:-9,0);return ok?'少し遅れてデータが届いた。':'まだ届かず、残念な気持ちになった。'}),
+ O('共通の友達に相談する',()=>{let ok=r(1,100)<70;effect(0,ok?8:-10,-1);return ok?'友達がさりげなく確認してくれた。':'友達を巻き込み、少し気まずくなった。'}),
+ O('今回は諦める',()=>{effect(0,-5,2);return '楽しみにしていた写真を諦めた。'})]),
+ ()=>ask('🎪 イベント当日のハプニング','イベントに到着！ ところが衣装や天気が心配……。',[
+ O('衣装の応急処置をする',()=>{let ok=r(1,100)<72;effect(ok?2:0,ok?5:-12,-5,r(0,110),-r(500,4000));return ok?'衣装を直して無事に撮影できた！':'直しきれず撮影予定が短くなった。'}),
+ O('友達と予定を調整する',()=>{let ok=r(1,100)<70;effect(ok?2:0,ok?8:-15,-4,0,-r(0,1500));return ok?'協力して楽しい時間を過ごせた。':'電車の遅延も重なり、予定が合わなかった。'}),
+ O('室内で撮影する',()=>{let ok=r(1,100)<65;effect(ok?3:0,ok?7:-9,-6,r(20,180),-r(1000,4500));return ok?'天気に左右されず良い写真が撮れた！':'室内も混んでいて写真を撮れなかった。'}),
+ O('今日は無理せず帰る',()=>{effect(0,4,9,0,-r(100,900));return '大きなトラブルを避けて帰宅した。'})])
+ ];variants[r(0,variants.length-1)]();
+}
+function merchEvent(){
+ const products=[['ブロマイド',10000],['アクリルスタンド',28000],['チェキ風カード',16000]];
+ ask('🎁 グッズ販売に挑戦！','「グッズが欲しい！」という声が届いた。制作費は先払い。売上はフォロワー数だけでなくファンの熱量と運で決まる。',[
+ ...products.map(([name,price])=>O(name+'を作る（'+fmt(price)+'円）',()=>{
+ if(S.cash<price)return '制作費が足りず、今回は見送った。';
+ cash(-price);const enthusiasm=(S.fanHeat||10);const big=r(1,100)<cl(22+Math.floor(enthusiasm*.6),20,80);
+ const revenue=Math.round(price*(big?r(115,215)/100:r(15,85)/100));cash(revenue);S.fanHeat=cl(enthusiasm+(big?5:-2),0,100);
+ effect(big?2:0,big?8:-7,-3,r(0,160));
+ if(big){pivotal('初めてのグッズ販売でファンに支えられた');return name+'が好評！ 売上'+fmt(revenue)+'円、制作費'+fmt(price)+'円。'}
+ return name+'の売れ残りが出てしまった。売上'+fmt(revenue)+'円、制作費'+fmt(price)+'円。';
+ },null)),
+ O('今回は見送る',()=>{effect(0,2,1);return '在庫リスクを避け、活動を続けた。'})
+ ]);
+}
+function familyEvent(){const familyGood=r(1,100)<64;ask('🏠 実家から連絡がきた！',familyGood?'家族から「元気にしてる？ 写真見たよ！」と連絡が届いた。':'家族から「仕事や生活は大丈夫？」と心配された。',[
+ O('近況と写真を送る',()=>{let ok=r(1,100)<70;effect(0,ok?10:-8,-1);return ok?'家族が活動を褒めてくれた。':'コスプレにかかる費用を心配された。'}),
+ O('悩みを相談する',()=>{let ok=r(1,100)<68;effect(0,ok?12:-7,1);return ok?'気持ちが楽になった。':'考え方が合わず少し疲れた。'}),
+ O('たまには実家で過ごす',()=>{S.familyStayUntil=S.day+100;effect(0,12,12,0,-r(2000,9500));return 'しばらく家族のそばで落ち着いて過ごすことにした。家賃負担が軽くなる。'}),
+ O('今は忙しいので後で返す',()=>{effect(0,1,1);return '後でゆっくり返事をしよう。'})]);}
+function friendRetirementEvent(){if(S.friendRetired){ask('🎀 引退した友達からの連絡','昔一緒に併せをしていた友達から「またコスプレしたくなってきた！」と連絡が来た。',[
+ O('復帰を応援する',()=>{S.friendRetired=false;S.network++;effect(0,11,-1);return '友達がコスプレ活動に復帰した！'}),
+ O('コスプレ以外でも遊ぶ',()=>{effect(0,9,-2,0,-r(300,1300));return '趣味が変わっても友情は続いている。'}),
+ O('近況を聞く',()=>{effect(0,5,0);return '久しぶりに懐かしい話ができた。'})]);return}
+ ask('💔 仲良しのレイヤーが引退','一緒に撮影を楽しんできた友達が、仕事の都合でコスプレを辞めるらしい。',[
+ O('最後の併せをする（3,000円）',()=>{if(!charge(3000))return '予算がなく、今回は参加できなかった。';S.friendRetired=true;effect(2,9,-7,r(20,80));pivotal('友達のコスプレ引退を見送った');return '素敵な思い出を残せた。'}),
+ O('趣味以外でも友達でいよう',()=>{S.friendRetired=true;S.friendship=(S.friendship||0)+3;effect(0,10,0);return 'コスプレ以外でも仲良くすることにした。'}),
+ O('そっと応援する',()=>{S.friendRetired=true;effect(0,3,1);return '友達の新しい道を見送った。'})]);}
+function beginnerApproachEvent(){if(S.day>1095)return extraCosplayEvent();if(S.network===0&&S.eventPhotos===0&&S.shoots===0)return extraCosplayEvent();let kind=['男性レイヤー','男性カメラマン'][r(0,1)];ask('💕 併せで声をかけられた',kind+'から「今度ふたりで遊びませんか？」と誘われた。',[
+ O('まず友達として交流する',()=>{let ok=r(1,100)<69;effect(0,ok?8:-12,-2);if(ok)S.network++;return ok?'新しく気の合う友達ができた！':'何度も誘われて困ってしまった。'}),
+ O('もう少し相手を知る',()=>{let ok=r(1,100)<62;effect(0,ok?7:-13,-1);return ok?'共通の趣味で楽しく話せた！':'少し距離感が合わないと感じた。'}),
+ O('丁寧に断る',()=>{let ok=r(1,100)<84;effect(0,ok?3:-8,0);return ok?'相手も理解してくれた。':'断った後もしつこく連絡が来て疲れた。'}),
+ O('友達に相談する',()=>{effect(0,7,-1);return '信頼できる友達と話して落ち着いた。'})]);}
+// 初心者（活動開始から3年以内）は、撮影や併せで悪質な勧誘・厄介な人間関係にも遭遇しやすい。
+// 被害は悪意ある相手の責任。慎重な対処は被害の深刻化を抑えやすい。
+function noviceTroubleEvent(){
+ if(S.day>1095 || S.cash<0 || !(S.eventPhotos>0||S.shoots>0))return extraCosplayEvent();
+ const variants=[
+ ()=>ask('📸 撮影条件が急に変わった','併せで知り合った男性カメラマンから撮影の誘い。直前になって「最初と違う内容でもいい？」と聞かれた。',[ 
+ O('事前の約束を確認する',()=>{let ok=r(1,100)<77;effect(0,ok?7:-12,-2);return ok?'約束どおりの撮影になり、安心して参加できた。':'相手が不機嫌になり、撮影を見送ることにした。約束は守られなかった。'}),
+ O('友達と一緒に参加する',()=>{let ok=r(1,100)<82;effect(ok?2:0,ok?9:-9,-4,ok?r(10,90):0);return ok?'友達のおかげで安心して撮影できた。':'相手が同伴を嫌がったので、無理せず断った。'}),
+ O('変更を受け入れる',()=>{let ok=r(1,100)<36;effect(ok?3:0,ok?9:-30,-7,ok?r(20,150):0);if(!ok)S.troubles++;return ok?'思いがけず良い写真になった。':'合意した範囲をさらに超える要求があり、撮影を切り上げた。嫌な経験になった。'}),
+ O('断って距離を置く',()=>{let ok=r(1,100)<87;effect(0,ok?5:-8,1);return ok?'相手も引き下がり、安心できた。':'断った後もしつこい連絡があったため、連絡を遮断した。'})]),
+ ()=>ask('💸 怪しい撮影募集','知り合ったばかりのレイヤーから「前払いすれば人気カメラマンを紹介する」と持ちかけられた。',[ 
+ O('実績や口コミを確認する',()=>{let ok=r(1,100)<75;effect(0,ok?7:-7,-1);return ok?'過去の問題が見つかり、支払いを避けられた。':'評判が分からず、今回は申し込みを見送った。'}),
+ O('友達に相談する',()=>{let ok=r(1,100)<82;effect(0,ok?8:-5,-1);return ok?'友達が注意してくれた。怪しい勧誘を断れた。':'確証は得られなかったが、慎重に見送った。'}),
+ O('紹介料を払う（6,000円）',()=>{if(!charge(6000))return '支払えるお金がなく、今回は見送った。';let ok=r(1,100)<32;effect(ok?2:0,ok?6:-30,-2,ok?r(20,120):0);if(!ok)S.troubles++;return ok?'本当に撮影の紹介があり、良い経験になった。':'紹介先の連絡先が使えず、相手とも連絡が取れなくなった。';}),
+ O('断ってブロックする',()=>{let ok=r(1,100)<87;effect(0,ok?4:-7,0);return ok?'トラブルに巻き込まれずに済んだ。':'共通の知り合いから話題にされ、少し気疲れした。'})]),
+ ()=>ask('🎭 併せのグループが不穏…','初めて参加した併せのグループで、特定のレイヤーが他人の悪口を広めているらしい。あなたにも同意を求めてきた。',[ 
+ O('悪口に加わらず距離を置く',()=>{let ok=r(1,100)<79;effect(0,ok?7:-10,-1);return ok?'大きな揉め事を避け、気の合う人と楽しめた。':'相手に陰口を言われてしまい、少し傷ついた。'}),
+ O('主催者に相談する',()=>{let ok=r(1,100)<70;effect(0,ok?9:-13,-2);return ok?'主催者が冷静に対処してくれた。':'主催者も仲裁できず、雰囲気が悪くなった。'}),
+ O('その場の話に合わせる',()=>{let ok=r(1,100)<40;effect(0,ok?5:-24,-2);if(!ok)S.troubles++;return ok?'その場は波風なく過ごせた。':'後日、あなたまで悪口に加わったと誤解されてしまった。'}),
+ O('今回は参加を取りやめる',()=>{effect(0,5,7);return '無理せず離れることにした。'})]),
+ ()=>ask('🥀 しつこい男性レイヤー','撮影会で出会った男性レイヤーが、個人情報を何度も聞いてくる。断っても話題を変えてくれない。',[ 
+ O('きっぱり断る',()=>{let ok=r(1,100)<82;effect(0,ok?6:-10,-1);return ok?'相手も理解して立ち去った。':'相手が不満そうだったため、スタッフに相談した。'}),
+ O('友達のところへ戻る',()=>{let ok=r(1,100)<88;effect(0,ok?8:-7,0);return ok?'友達と合流して安心できた。':'相手からの連絡が続いたため、後でブロックした。'}),
+ O('場の空気に合わせて話す',()=>{let ok=r(1,100)<38;effect(0,ok?3:-24,-3);if(!ok)S.troubles++;return ok?'その場は穏便に終わった。':'個人的な連絡が何度も来て、負担になってしまった。'}),
+ O('主催者・スタッフに相談',()=>{let ok=r(1,100)<84;effect(0,ok?8:-9,-1);return ok?'スタッフが間に入り、安心して参加できた。':'すぐには解決しなかったが、連絡先を交換せず離れた。'})])
+ ];variants[r(0,variants.length-1)]();
+}
+function fameDirectionEvent(){ask('👑 有名になった今、どう生きる？','企業案件や出演のお誘いが増えた。昔のように気軽にコスプレを楽しむ時間は減っている。',[
+ O('芸能活動に力を入れる',()=>{if(S.pop>62)S.job=5;S.focus=3;effect(3,-6,-8);return '仕事のチャンスが増えた。忙しい日々が始まる。'}),
+ O('コスプレを中心にする',()=>{S.focus=4;effect(2,8,-4);return '好きな作品への熱意を大切にした。'}),
+ O('バランスを取る',()=>{S.focus=6;effect(1,7,-3);return '仕事と交流を両立することにした。'}),
+ O('少し休止する',()=>{S.hiatusUntil=S.day+80;S.focus=7;effect(0,16,15);return '休んで自分の気持ちを見つめ直した。'})]);}
+function romanceMilestoneEvent(){if(!S.partner)return;const anniversary=r(1,100)<35;const price=anniversary?r(3000,10000):r(1200,4500);const title=anniversary?(S.married?'💍 結婚記念日':'🎂 恋人の誕生日・記念日'):'💕 休日のデート';ask(title,(S.married?'旦那':'彼氏')+'と過ごす予定がある。少しだけお金がかかりそう。',[
+ O('お祝いする（'+fmt(price)+'円）',()=>{if(!charge(price))return '予算が足りず、別のお祝いを考えた。';let ok=r(1,100)<75;S.partnerTrust=cl((S.partnerTrust||55)+(ok?8:-4),0,100);effect(0,ok?10:-8,-3);return ok?'ふたりで楽しく過ごせた！':'予定が合わず少しぎくしゃくした。'}),
+ O('お家で節約デート',()=>{let ok=r(1,100)<76;S.partnerTrust=cl((S.partnerTrust||55)+(ok?5:-2),0,100);effect(0,ok?8:-5,0,0,-r(0,500));return ok?'お金をかけずに楽しい一日を過ごせた！':'思っていた過ごし方が違って少し気まずかった。'}),
+ O('コスプレの予定を優先',()=>{S.partnerTrust=cl((S.partnerTrust||55)-r(3,11),0,100);effect(1,-4,-4,r(0,65));return '活動を優先した。恋人は少し寂しそうだった。'})]);}
+function breakupRiskEvent(){if(!S.partner)return;const trait=S.partnerTrait||'supportive';const fragile=S.partnerTrust<45;const breakup=fragile&&(r(1,100)<(trait==='jealous'?77:trait==='independent'?35:52));if(!breakup){ask('💕 恋人とのすれ違い','最近はコスプレ活動で忙しく、恋人との予定が合わないことが増えた。',[
+ O('落ち着いて話し合う',()=>{let ok=r(1,100)<68;S.partnerTrust=cl((S.partnerTrust||55)+(ok?14:-8),0,100);effect(0,ok?9:-12,-2);return ok?'お互いの気持ちを理解できた。':'話がうまくまとまらなかった。'}),
+ O('デートの時間を作る（2,000円）',()=>{if(!charge(2000))return 'お金が足りず今回は家で会った。';S.partnerTrust=cl((S.partnerTrust||55)+9,0,100);effect(0,9,-2);return '少し距離が縮まった。'}),
+ O('今は活動を優先する',()=>{S.partnerTrust=cl((S.partnerTrust||55)-8,0,100);effect(1,-5,-3);return '気持ちがすれ違ったままになった。'})]);return}
+ const ex=S.partner;S.partner=null;S.married=false;S.partnerTrust=50;pivotal('恋人から突然の別れを告げられた');const weak=(S.resilience===2);if(weak){S.hiatusUntil=Math.max(S.hiatusUntil||0,S.day+r(90,200));S.focus=7;addStatus('失恋を引きずっている',100)}
+ ask('💔 突然の別れ話',ex+'の恋人から「もう別れたい」と告げられた。'+(weak?'しばらくコスプレをする気持ちになれない……。':''),[
+ O('友達に相談する',()=>{effect(0,weak?-12:-8,2);return '失恋はつらいけれど、話を聞いてもらった。'}),
+ O('しばらく休む',()=>{S.focus=7;effect(0,12,18);return '自分の気持ちを大切にした。'}),
+ O('少しずつ前を向く',()=>{effect(0,weak?-15:-10,0);return '時間をかけて立ち直ろうと思った。'})],()=>lifeReflection('恋人との別れ'));
+}
+
+function pick(){if(S.cash<0){ask('💸 コスプレはお休み中','赤字を解消するまでコスプレ活動はできない。今は生活を立て直そう。',[O('仕事を頑張る',()=>{S.focus=3;effect(0,-3,-5);return '働く方針に切り替えた。収入は日数に応じて入る。'}),O('友達と無料で過ごす',()=>{effect(0,9,-2);return 'お金を使わず友達と過ごして気分転換した。'}),O('ゆっくり休む',()=>{effect(0,12,18);return '体と心を休めた。'}),O('再就職の準備をする',()=>{effect(0,3,2);return '仕事を探す準備をした。転職の機会は時間をおいて訪れる。'})]);return}const opts=[];const add=(weight,fn)=>{for(let i=0;i<weight;i++)opts.push(fn)};add(6,socialEvent);add(4,fanContactEvent);add(S.cash>=0?4:0,costumeShopEvent);add(2,expenseEvent);add(4,earnEvent);add(S.cash>=0?4:0,simpleDaily);add(3,negativeLifeEvent);add(S.resilience===0?4:S.resilience===1?2:1,resilienceIncident);add(7,newLifeEvent);if(S.cash>=0&&S.day>90){add(3,extraCosplayEvent);add(2,familyEvent);if(S.network>0)add(2,friendRetirementEvent);if((S.eventPhotos||S.shoots)&&S.day<=1095)add(S.resilience===2?2:5,beginnerApproachEvent);if((S.eventPhotos||S.shoots)&&S.day<=1095)add(S.resilience===2?3:6,noviceTroubleEvent);if(S.followers>900||S.fanHeat>20)add(2,merchEvent);if(S.pop>65&&!S.fameDirectionDone)add(1,()=>{S.fameDirectionDone=true;fameDirectionEvent()});}if(S.partner){add(3,romanceMilestoneEvent);if((S.partnerTrust||55)<55)add(2,breakupRiskEvent)}if(S.network>0){add(4,friendEvent);add(3,collaboratorEvent)}if(S.eventPhotos>0){add(S.cash>=0?3:0,afterEvent);add(S.cash>=0?3:0,cameraEvent);if(S.cameras>0)add(2,()=>rideEvent(r(0,1)===0))}if(S.cameras>0&&S.cash>=0)add(2,cameraEvent);if(S.partner){add(3,romanceEvent);add(3,relationshipEvent);add(1,rumorEvent)}else if(S.day>200)add(2,romanceEvent);if(S.day>=S.nextLicense&&!S.license)add(1,licenseEvent);if(S.license&&!S.car&&S.day>=S.nextCar)add(2,carEvent);if(S.car)add(2,carFriend);if(S.day>300&&S.fires<5&&r(1,100)<((S.type===2?12:8)*([1.45,1,.65][S.resilience??1])))add(1,banEvent);
+const seasonWeight=season()==='冬'?1:season()==='夏'?6:4;const evtFactor=S.focus===2?3:1;if(S.cash>1000&&!S.bankrupt&&!S.hiatusUntil) add(seasonWeight*evtFactor,()=>{recordEvent();ask('🎪 イベントに参加した！','イベントで新しい交流があった。次はどうする？',[O('撮影してもらう',()=>{S.cameras++;S.shoots++;effect(3,-1,-5,r(40,200));return '撮影してもらい写真を投稿した。'}),O('アフターに参加する',()=>{let c=r(2000,6000);if(!charge(c))return '予算が足りず見送った。';S.afters++;let b=r(1,100)<23;effect(0,b?-13:9,-8);S.network++;if(b)S.troubles++;return b?'気まずい誘いを受けて嫌な思いをした。':'新しい友達と仲良くなった！'}),O('そのまま帰る',()=>{effect(0,4,6);return '楽しい一日だった。'})])});let chosen=opts[r(0,opts.length-1)];chosen()}
+function tick(){
+if(paused||locked||ended)return;
+let step=r(10,19);S.day+=step;const days=step;
+if(!Number.isFinite(S.nextJobOffer))S.nextJobOffer=S.day+450;if(!Number.isFinite(S.jobLostUntil))S.jobLostUntil=0;if(!Number.isFinite(S.nextShock))S.nextShock=S.day+500;if(!Number.isFinite(S.nextHealthIncident))S.nextHealthIncident=S.day+180;
+// 無職は収入ゼロ。コスプレ専業は雇用給与なし、人気とファンの熱量に応じた不定期の活動収入。
+// 低知名度ではほとんど稼げず、案件が無い月もある。芸能職の安定給与とは区別する。
+let professionalIncome=0;
+if(S.job===4){
+ const rate=cl(.10+S.pop*.003+(S.fanHeat||0)*.0015,.10,.55);
+ if(Math.random()<rate*days/30){
+  professionalIncome=Math.round((1800+S.pop*450+(S.fanHeat||0)*170)*(.55+Math.random())*days/15);
+  if(professionalIncome>0&&r(1,4)===1)log('🎀 コスプレの小さな仕事やグッズ販売から収入が入った（'+fmt(professionalIncome)+'円）。');
+ }
+}
+const income=(WTincome[S.job]||0)*days/30+professionalIncome,live=([97000,80000,145000,112000,110000][S.region??0])*days/30;
+const familyDiscount=(S.familyStayUntil||0)>S.day?0.60:1;
+const upkeep=S.car?(S.car==='軽自動車'?8000:15000)*days/30:0;
+const post=S.cash<0||S.hiatusUntil>S.day?0:(paceRate[S.pace]||0);
+S.effects=(S.effects||[]).filter(x=>x.until>S.day);const flaming=S.effects.some(x=>x.name==='炎上中');const anxious=S.effects.some(x=>x.name==='撮影への不安');const motivated=S.effects.some(x=>x.name==='バズの勢い');const fmult=(S.xban&&S.type===1?.2:1)*(flaming?.48:1)*(motivated?1.8:1);
+let gain=Math.round(post*days/30*(6+S.pop*.7)*fmult*(.45+Math.random())*([1,.80,1.05,.94][S.region??0]));
+let extra=0,mental=0,energy=0;
+if(S.cash<0&&[0,1,2,4].includes(S.focus)){S.focus=3;log('金欠のためコスプレ活動を止め、生活費の確保を優先している。')}
+if(S.focus===1||S.focus===4)S.makeupSkill=cl((S.makeupSkill||0)+days/55,0,100);if(S.focus===5||S.focus===6)S.fanHeat=cl((S.fanHeat||10)+days/140,0,100);
+if(S.focus===0){extra=post*110*days/30;energy=-1;mental=-1}
+else if(S.focus===1){extra=110*days;mental=1;energy=-1}
+else if(S.focus===2){extra=130*days;energy=-2}
+else if(S.focus===3){energy=-Math.ceil(WTdrain[S.job]/4);mental=-1;extra=0}
+else if(S.focus===4){extra=100*days;energy=-1}
+else if(S.focus===5){extra=70*days;energy=-1}
+else if(S.focus===6){extra=50*days;mental=2;energy=0}
+else{mental=5;energy=7}
+if(anxious&&S.focus===4){energy-=2;mental-=2}if(flaming){mental-=2}const focusCost=[900,2300,3100,400,2600,1600,1300,0][S.focus]*days/7;const cost=post*110*days/30+Math.max(0,extra)+focusCost;
+// Ver.2.8.3: 活動中の疲労を少し重く。自動休息の回復はなし（おやすみ等の明示選択のみ）。
+let staminaChange=energy-Math.round(WTdrain[S.job]*days/100)-Math.round(paceDrain[S.pace]*days/125);
+if(S.focus!==7)staminaChange-=Math.max(0,Math.round(days/28));
+// 初期特性：全タイプ100/100からスタートし、行動の効率とリスクに差がつく。
+if(S.type===0){gain=Math.round(gain*1.20);staminaChange-=Math.max(0,Math.round(days/24));}
+if(S.type===1){gain=Math.round(gain*1.12);}
+if(S.type===2){if(mental<0)mental=Math.ceil(mental*0.65);}
+effect(r(1,100)<Math.min(35,post*1.3)?1:0,mental-Math.round(paceDrain[S.pace]*days/48)-(S.focus===7?0:Math.max(1,Math.round(days/14))),staminaChange,gain,Math.round(income-live*familyDiscount-upkeep-cost+(S.job===8&&S.married?Math.round(85000*days/30):0)));
+if(S.partner){if([0,2,4].includes(S.focus))S.partnerTrust=cl((S.partnerTrust??65)-days/85,0,100);else if(S.focus===6||S.focus===7)S.partnerTrust=cl((S.partnerTrust??65)+days/130,0,100)}
+if(S.cash<0){S.debtDays=(S.debtDays||0)+days;effect(0,-Math.max(1,Math.round(days/16)),0);if(!S.bankrupt){S.everBankrupt=true;S.bankrupt=true;log('💸 破産状態。所持金が0円以上になるまでコスプレ活動を停止。')}}else if(S.bankrupt){S.bankrupt=false;S.debtDays=0;log('🎉 借金がなくなった！コスプレ活動を再開できる。')}
+if(S.cash>=0)everydayDiary();else if(r(1,3)===1)log("コスプレを休止中。友達との交流や仕事で生活を立て直そう。");
+if(S.fame>0&&S.focus===3&&r(1,100)<18){S.friendship--;if(S.friendship<1)log('仕事で忙しく、昔の友人とは少し疎遠になっている。')}
+if(S.day>=1461&&!S.moved){mandatoryMove();return}
+if(S.hiatusUntil&&S.day>=S.hiatusUntil){S.hiatusUntil=0;S.focus=0;log('休止期間を終え、コスプレ活動を少しずつ再開した。')}
+if(S.mind<=0||S.energy<=0){crisis();return}
+if(S.cash<=12000&&!S.povertyPrompted&&S.day>70){S.povertyPrompted=true;moneyReflection();return}
+if(S.cash<=-190000){moneyCrisis();return}
+if(S.day>=S.nextJobOffer&&S.day>=(S.jobLostUntil||0)){S.nextJobOffer=S.day+r(365,730);jobChangeEvent();return}
+if((S.mind<40||S.energy<30)&&S.day>=S.nextHealthIncident){S.nextHealthIncident=S.day+r(150,250);healthIncident();return}
+if(S.day>=S.nextShock){S.nextShock=S.day+r(300,570);shockEvent();return}
+if(age()>=30){finish('長年の活動に幕を下ろした');return}
+if(S.day>=S.nextRetire&&age()>=21){S.nextRetire=S.day+r(900,1250);retireOffer();return}
+if(S.cash>=0&&S.day>=S.nextSpecial){S.nextSpecial=S.day+r(400,700);specialEvent();return}if(S.day>=S.next){S.next=S.day+r(165,245);pick();return}
+render();
+}
+function finish(reason){ended=true;locked=false;stop();const rank=S.followers>250000&&S.jobs>=6?'S+':S.followers>100000?'S':S.followers>30000?'A':S.followers>5000?'B':S.followers>300?'C':S.followers>50?'D':'E';const title={'S+':'伝説のコスプレイヤー','S':'有名人最強レイヤー','A':'人気インフルエンサーレイヤー','B':'愛されコスプレイヤー','C':'マイペースな趣味レイヤー','D':'これからの可能性を残したレイヤー','E':'駆け出しで引退したレイヤー'}[rank];const good=S.jobs>=3?'企業案件や仕事への挑戦を続けた。':S.network>=8?'多くの仲間と関係を育てた。':S.followers>1000?'SNSで作品を発信し続けた。':'自分なりのペースで活動を始めた。';const issue=S.mind<35?'心の余裕が少なくなっていた。':S.energy<35?'体力管理が大きな課題になった。':S.cash<20000?'衣装代や遠征費の管理を見直せそう。':S.fires>1?'SNSの発信と炎上対応に苦労した。':'無理せず休む時間も大切にしたい。';const acts=S.actions||{};const personality=Object.entries({rest:acts.rest||0,care:acts.care||0,practical:acts.practical||0,drive:acts.drive||0,balanced:acts.balanced||0}).sort((a,b)=>b[1]-a[1])[0]?.[0]||'balanced';const personalityName={rest:'自分のペースを守る慎重派',care:'仲間思いのあったかタイプ',practical:'計画的な堅実派',drive:'挑戦を続ける行動派',balanced:'バランス感覚のある自由人'}[personality];const personalityText={rest:'休息や距離感を大切にしながら、無理のない道を選びました。',care:'友達や恋人とのつながりを大切にしてきました。',practical:'お金や仕事を考え、生活を守る選択を重ねました。',drive:'撮影や投稿に積極的に挑んできました。',balanced:'状況を見ながら、その時々の答えを選んできました。'}[personality];const advice=S.troubles>2?'現実では撮影条件や相手との距離感を確かめ、困ったら信頼できる人へ相談しよう。':S.cash<20000?'現実では趣味の予算と生活費を分けて、無理のない活動計画を立てよう。':'現実でも体調と生活を優先し、自分に合ったペースで趣味を楽しもう。';let wrap=document.createElement('div');wrap.className='end';wrap.innerHTML='<div class="eyebrow">✦ YOUR COSPLAYER LIFE ✦</div><div class="endrank">'+rank+'</div><h2>'+title+'</h2><p class="muted">'+age()+'歳で引退 ・ '+reason+'</p><div class="endingtext"></div><button class="btn full" id="again" type="button" style="margin-top:16px">♡ 新しい人生を始める</button>';let text='📖 こんなレイヤー人生でした！\n18歳でコスプレデビュー。'+(S.outfits>0?'衣装を準備して写真を投稿し、':'限られた資金で活動を始め、')+(S.eventPhotos?'イベントに'+S.eventPhotos+'回参加。':'自分のペースで作品を発信。')+(S.partner?S.partner+'の恋人との思い出もできた。':'自分らしい交流を楽しんだ。')+'\n\n♡ 最終フォロワー：'+fmt(S.followers)+'人\n✦ 人気：'+S.pop+' / 100\n💰 所持金：'+fmt(S.cash)+'円\n🎪 イベント：'+S.eventPhotos+'回 / 📸 個撮：'+S.shoots+'回\n💌 有償案件：'+S.jobs+'件 / 🔥 炎上：'+S.fires+'回\n\n💗 あなたはこんな性格だった！\n'+personalityName+'\n'+personalityText+'\n\n🌸 ここを頑張った！\n'+good+'\n\n🥀 ここは改善できたかも\n'+issue+'\n\n💌 現実なら気をつけたいこと\n'+advice;wrap.querySelector('.endingtext').textContent=text;let ending=document.getElementById('ending-screen');if(!ending){ending=document.createElement('section');ending.id='ending-screen';ending.setAttribute('role','dialog');ending.setAttribute('aria-modal','true');ending.setAttribute('aria-label','コスプレ人生の表彰・結果');document.body.append(ending)}ending.textContent='';const banner=document.createElement('div');banner.className='ending-banner';banner.innerHTML='<div class="eyebrow">✦ COSPLAYER LIFE 2026 ✦</div>';ending.append(banner,wrap);const footer=document.createElement('div');footer.className='ending-footer';footer.textContent='♡ YOUR STORY, YOUR LIFE ♡';ending.append(footer);ending.classList.remove('hidden');wrap.scrollTop=0;wrap.querySelector('#again').addEventListener('click',reset);log('引退。ランク '+rank+'「'+title+'」');render()}
+function reset(){const ending=document.getElementById('ending-screen');if(ending)ending.remove();stop();const traitRoll=r(1,100);const resilience=traitRoll<=25?0:traitRoll<=75?1:2;const mindMax=[120,100,80][resilience];S={resilience,mindMax,actions:{},day:1,stage:0,type:-1,pace:-1,job:-1,focus:0,pop:0,mind:mindMax,energy:100,followers:0,peak:0,cash:10000,earned:0,events:0,eventPhotos:0,cameras:0,shoots:0,afters:0,network:0,trust:0,trustCamera:false,exclusive:false,outfits:0,troubles:0,fires:0,bans:0,xban:false,jobs:0,partner:null,loveStart:0,married:false,license:false,car:null,nextLicense:r(300,950),nextCar:Infinity,nextRetire:r(2800,3500),next:90,lastEvent:0,nextDiary:7,pendingDiary:null,logs:[],effects:[],fame:0,editing:0,friendship:6,fanHeat:10,makeupSkill:0,partnerTrust:65,partnerTrait:null,lastRomanceDiary:0,friendRetired:false,turningPoints:[],viral:0,region:0,moved:false,quality:0,reflectionQueue:null,hiatusUntil:0,nextSpecial:580,nextJobOffer:620,jobLostUntil:0,nextShock:750,nextHealthIncident:130,lowEpisodes:0,bankrupt:false,povertyPrompted:false,debtDays:0,lastWorkBonusDay:-9999};ended=false;locked=false;paused=true;$('eventbox').innerHTML='<div class="eventtag" id="etag"></div><h2 class="eventtitle" id="etitle"></h2><div class="story" id="estory"></div><div class="choices" id="choices"></div><div class="event-result hidden" id="eventresult"></div>';log('18歳、コスプレ人生を始める決意をした。');ask('どんなコスプレイヤーになりたい？','18歳、フォロワー0人。コスプレ活動で目指す方向は？',[O('🎬 動画投稿系（TikTok・YouTube）【動画拡散が得意／制作疲労】',()=>{S.type=0;S.stage=1;return '動画を中心に活動することにした。'}),O('📸 写真投稿系（X・Instagram）【写真が得意／撮影費用】',()=>{S.type=1;S.stage=1;return '写真投稿を中心に活動することにした。'}),O('👑 有名人志向（テレビ・PR）【批判耐性／炎上・怪しい案件に注意】',()=>{S.type=2;S.stage=1;return '知名度と仕事の獲得を目指すことにした。'})],choicesPace)}
+$('play').addEventListener('click',()=>paused?play():stop());$('speed').addEventListener('change',()=>{if(!paused)play()});$('focus').addEventListener('change',e=>{if(!S||S.stage<3)return;const prev=S.focus;S.focus=cl(Number(e.target.value)||0,0,7);if(prev===S.focus)return;if(S.focus===3){if(S.day-(S.lastWorkBonusDay??-9999)>=30){cash(30000);S.lastWorkBonusDay=S.day;log('お仕事に専念！ 働く時間を増やして30,000円の収入を得た。')}else{log('お仕事に専念！ 収入ボーナスは前回から30日後に受け取れる。')}}else{log('活動方針を「'+WF[S.focus]+'」に変更した。')}render()});$('reset').addEventListener('click',()=>{if(confirm('今の人生を消して最初から始めますか？'))reset()});$('save').addEventListener('click',()=>{if(!S)return;try{localStorage.setItem('cosplayer_life_v2',JSON.stringify(S));$('savehelp').textContent='♡ セーブしました！ この端末・ブラウザ内に保存されました。'}catch(e){$('savehelp').textContent='このブラウザではセーブできません。ゲームはそのまま遊べます。'}});$('load').addEventListener('click',()=>{try{let raw=localStorage.getItem('cosplayer_life_v2');if(!raw){$('savehelp').textContent='セーブデータがありません。';return}let obj=JSON.parse(raw);if(!obj||typeof obj.day!=='number'||!Array.isArray(obj.logs)||obj.stage<3){$('savehelp').textContent='ロードできるセーブデータがありません。';return}stop();S=obj;if(S.resilience===undefined){S.resilience=1;S.mindMax=100;}S.actions=S.actions||{};S.next=Math.max(S.day+15,S.next||S.day+40);ended=false;locked=false;$('eventbox').classList.add('hidden');$('eventbox').innerHTML='<div class="eventtag" id="etag">SAVE LOADED</div><h2 class="eventtitle" id="etitle">♡ おかえりなさい！</h2><div class="story" id="estory">前回の続きから再開できます。「自動進行」を押してね。</div><div class="choices" id="choices"></div><div class="event-result hidden" id="eventresult"></div>';log('セーブデータをロードした。');render();$('savehelp').textContent='♡ ロードしました。'}catch(e){$('savehelp').textContent='セーブデータを読み込めませんでした。'}});
+const guidePages=[
+['ようこそ！','18歳・人気0・フォロワー0人。\nメンタルの最大値は人それぞれ。体力100、所持金10,000円からスタート！\n撮影・投稿・アルバイト・恋愛・炎上を経験し、あなたらしいコスプレ人生を送ろう。'],
+['どうやって遊ぶ？','日付と日常は自動進行。\n✨ 重要イベントが起きると自動停止！\n「イベントを見る」→選択→HAPPY / NORMAL / BAD結果を確認。\n「結果を反映して次へ」でステータスが確定し、オート進行が再開するよ。'],
+['操作方法','⏩「進行速度」で普通・高速・超高速を変更。\n🎀「今の活動方針」で投稿、自分磨き、イベント、仕事、撮影、交流、友達、おやすみを切り替えられる。\n投稿＝フォロワー↑疲労↑／仕事＝切替時＋3万円（30日ごと）・収入↑疲労↑／撮影・イベント＝実績↑出費↑／友達＝メンタル↑交際費↑／おやすみ＝回復↑成長↓。\n活動方針は日数経過で効くよ。\n画面下の「セーブ」「ロード」で続きを管理できる。'],
+['何を目指す？','動画投稿系：動画が伸びやすい反面、制作疲労が増える。\n写真投稿系：写真が伸びやすいが衣装・撮影費用がかかる。\n有名人志向：批判に比較的強いが、炎上や怪しい依頼がやや多い。\n初期メンタルは80・100・120のいずれかにランダム決定。体力は100。\n人気者でも、趣味を楽しむ人でもOK！引退時に人生を振り返ろう。']
+];
+let guideIndex=0;
+function openGuide(){stop();guideIndex=0;showGuide();$('onboarding').classList.remove('hidden')}
+function showGuide(){const pg=guidePages[guideIndex];$('guideprogress').textContent='GUIDE '+(guideIndex+1)+' / '+guidePages.length;$('guidetitle').textContent=pg[0];$('guidebody').textContent=pg[1].replaceAll('\\n','\n');$('guidenext').textContent=guideIndex===guidePages.length-1?'ゲームに戻る ♡':'次へ ♡'}
+function closeGuide(){ $('onboarding').classList.add('hidden'); if(S&&S.stage>=3&&!locked&&!ended)play() }
+$('guidenext').addEventListener('click',()=>{if(guideIndex<guidePages.length-1){guideIndex++;showGuide()}else closeGuide()});
+$('guideskip').addEventListener('click',closeGuide);
+$('helpbtn').addEventListener('click',openGuide);
+reset();openGuide();
+})();
+</script></body></html>
